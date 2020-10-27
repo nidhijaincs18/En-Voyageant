@@ -2,8 +2,31 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(140, 69, 190), rgb(61, 139, 184), rgb(236, 31, 113) );
+    background-image: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(116, 56, 158), rgb(52, 132, 179), rgb(218, 21, 99) );
+    transition: 1s;
+    animation: color-animate 16s linear infinite;
 }
+
+@keyframes color-animate{
+    0%{
+        background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(116, 56, 158), rgb(52, 132, 179), rgb(218, 21, 99) );
+    }
+    25%{
+        background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(219, 38, 93), rgb(228, 126, 9), rgb(221, 190, 11) );
+    }
+    50%{
+        background: linear-gradient(to bottom right, rgb(253, 52, 75), rgb(235, 48, 104), rgb(10, 191, 188)
+        );
+    }
+    75%{
+        background: linear-gradient(to bottom right, rgb(36, 221, 181),rgb(25, 158, 129), rgb(247, 126, 51));
+    }
+    100%{
+        background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(116, 56, 158), rgb(52, 132, 179), rgb(218, 21, 99) );
+    }
+}
+
+/* Slideshow CSS*/
 .container{
     position: relative;
     width: 100%;
@@ -79,7 +102,7 @@ body{
    position: absolute;
    top: 23%;
    left: 8%;
-   width: 48em;
+   width: 60%;
    color: white;
    transform: translateY(120px);
    visibility: hidden;
@@ -103,7 +126,7 @@ body{
     padding: 5px;
     font-size: 1.5rem;
     line-height: 28px;
-    text-align: justify;
+    /*text-align: justify;*/
     letter-spacing: 4px;
     text-shadow: 4px 4px 5px rgb(0, 0, 0) ;
     font-family: 'Grenze Gotisch';
@@ -211,4 +234,49 @@ button:hover{
     animation-delay: 11.1s;
 }
 
+/* Tour Cards*/
 
+.tour-cards{
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    padding: 0;
+    border: 1px solid white;
+    overflow: hidden;
+}
+.tour-cards h1{
+    font-size: 5.8rem;
+    font-weight: 900;
+    font-family: 'Archivo Black';
+    color: rgba(226, 222, 222, 0.3);
+    text-transform: uppercase;
+    text-align: center;
+    opacity: 0.6;
+}
+.tour-cards h2{
+    position: absolute;
+    top: 28%;
+    left: 43%;
+    text-align: center;
+    font-size: 2.5rem;
+}
+.tour-cards h2::before, .tour-cards h2::after{
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(to right,rgb(32, 32, 32), rgb(36, 90, 172));
+    position: absolute;
+    transition: all .3s;
+}
+.tour-cards h2::before{
+    left: 0;
+    top: -6px;
+}
+.tour-cards h2::after{
+    right: 0;
+    bottom: -8px;
+}
+.tour-cards h2:hover::before, .tour-cards h2:hover::after{
+    width: 100%;
+}
