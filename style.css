@@ -239,12 +239,12 @@ body{
 .tour-cards{
     position: relative;
     box-sizing: border-box;
-    position: relative;
     width: 100%;
     padding: 0;
     overflow: hidden;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.5);
 }
-.tour-cards h1{
+.background{
     font-size: 5.8rem;
     font-weight: 900;
     font-family: 'Archivo Black';
@@ -268,7 +268,7 @@ body{
     font-size: 2.5rem;
     margin: 0;
 }
-.tour-cards h2::before, .tour-cards h2::after{
+.heading-overlap h2::before, .heading-overlap h2::after{
     content: '';
     display: block;
     width: 0;
@@ -277,15 +277,15 @@ body{
     position: absolute;
     transition: all .3s;
 }
-.tour-cards h2::before{
+.heading-overlap h2::before{
     left: 0;
     top: -6px;
 }
-.tour-cards h2::after{
+.heading-overlap h2::after{
     right: 0;
     bottom: -6px;
 }
-.tour-cards h2:hover::before, .tour-cards h2:hover::after{
+.heading-overlap h2:hover::before, .heading-overlap h2:hover::after{
     width: 100%;
 }
 
@@ -436,4 +436,94 @@ body{
 .cards:hover .text-animate p{
     transform: translateX(0);
     opacity: 1;
+}
+
+/* Offerings Division*/
+.offerings{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.offerings .heading-overlap{
+    top: 11%;
+}
+.offering-slider{
+    width: 100%;
+    background-image: url(Front_page_images/asim-mondal-p1FcNjM93QY-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    animation: fade 24s infinite;
+}
+@keyframes fade{
+    25%{
+        background-image: url(Front_page_images/melissa-cassar-wJEuwP4aaNU-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    50%{
+        background-image: url(Front_page_images/todd-kent--BwKdtTCpw0-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    75%{
+        background-image: url(Front_page_images/arnav-jain-94E9Q4T9OmU-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    100%{
+        background-image: url(Front_page_images/asim-mondal-p1FcNjM93QY-unsplash.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+.offering-cards{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(73, 71, 71, 0.3);
+}
+.offering-cards .services{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.offering-cards .services .service-list{
+    box-sizing: border-box;
+    width: 28%;
+    padding: 10px;
+    margin: 10px 0 ;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.offering-cards .services .service-list span{
+    width: 80px;
+    height: 80px;
+    display: block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    background: radial-gradient(rgb(231, 8, 64),rgb(248, 182, 58));
+}
+.offering-cards .services .service-list span i{
+    font-size: 2.5rem;
+    color: white;
+    margin: 1.2rem 1rem;
+}
+.offering-cards .services .service-list h1 {
+    color: white;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 2.2rem;
+    line-height: 26px;
+    margin-bottom: 0;
+    font-family: 'Permanent Marker';
+}
+.offering-cards .services .service-list p{
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Marck Script';
+    margin-bottom: 0;
 }
