@@ -149,7 +149,7 @@ body{
 .caption button i{
     margin-right: 7px;
 }
-button:hover{
+.caption button:hover{
     background-color: rgba(155, 147, 147, 0.5);
     transform: scale(1.5,1.5);
     padding: 8px;
@@ -242,7 +242,6 @@ button:hover{
     position: relative;
     width: 100%;
     padding: 0;
-    border: 1px solid white;
     overflow: hidden;
 }
 .tour-cards h1{
@@ -289,7 +288,150 @@ button:hover{
 .tour-cards h2:hover::before, .tour-cards h2:hover::after{
     width: 100%;
 }
-.cards-slider img{
+
+.tour-cards .tour-button{
+    display: inline-block;
+    position: absolute;
+    top: 35%;
+    right: 25%;
+    border-radius: 35px ;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border: 1px solid rgba(73, 73, 73, 0.3);
+    padding: 12px 10px 8px;
+    font-size: 1.5rem;
+    font-family: 'Henny Penny';
+    box-shadow: 5px 5px 5px rgba(22, 22, 22, 0.8);
+    transition: all .3s;
+}
+.tour-cards .tour-button:hover{
+    background-color: rgba(255,255,255,0.3);
+    color: black;
+    font-weight: 600;
+}
+.tour-cards .cards-slider{
+    position: relative;
+   /* border: 1px solid yellow;*/
+    width: 90%;
+    height: 380px;
+    margin: 10rem  auto 2rem;
+    overflow: hidden;
+    transition:  all .4s;
+}
+.tour-cards .angle-right{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgba(226, 222, 222, 0.3);
+    position: absolute;
+    top: 35%;
+    right: 10%;
+    font-size: 2.5rem;
+    padding: 2px;
+    transition: all .2s;
+}
+.tour-cards .angle-left{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: rgba(226, 222, 222, 0.3);;
+    position: absolute;
+    margin-right: 1.5rem;
+    top: 35%;
+    right: 15%;
+    font-size: 2.5rem;
+    padding: 2px;
+    transition: all .2s;
+}
+.tour-cards i{
+    margin-left: 10px;
+}
+.tour-cards .angle-right:hover,
+.tour-cards .angle-left:hover{
+    cursor: pointer;
+    background-color: rgba(22, 22, 22, 0.3);
+    color: rgb(247, 242, 242);
+}
+.cards-slider .cards{
+    position: relative;
+    background-color: #000;
+    display: inline-block;
+    width: 500px;
+    height: 380px;
+    margin: 0px 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.cards img{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 500px;
+    height: 100%;
+    border-radius: 10px;
+    transition: all 0.5s ease-out;
+}
+.cards .color-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(61, 61, 61);
+    opacity: 0.2;
+    z-index: 1;
+}
+.text-animate{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 1rem;
+    height: 100%;
+    border-radius: 10px;
+    z-index: 3;
+}
+.cards .text-animate h3{
+    color: white;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    margin: 4rem 2rem 0;
+    font-family: 'Niconne';
+    transition: .4s;
+}
+
+.cards .text-animate h4{
+    color: white;
+    font-size: 1.3rem;
+    font-family: cursive;
+    margin: 0rem 2rem;
+    width: 70%;
+    word-spacing: 1px;
+}
+.cards .text-animate p{
+    margin: 10px auto 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(220px);
+    width: 90%;
+    height: 170px;
+    color: white;
+    opacity: 0;
+    font-size: 1.4rem;
+    padding: 5px;
+    font-family: 'Acme';
+    transition: all 0.4s ease-in-out;
+}
+.cards:hover .text-animate h3{
+    color: rgb(255, 123, 0);
+}
+.cards:hover img{
+    filter: blur(5px);
+}
+.cards:hover .text-animate p{
+    transform: translateX(0);
+    opacity: 1;
 }
