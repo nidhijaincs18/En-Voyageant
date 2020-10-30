@@ -291,7 +291,7 @@ body{
     border-radius: 10px;
     transition: all 0.5s ease-out;
 }
-.cards .color-overlay{
+.color-overlay{
     position: absolute;
     top: 0;
     left: 0;
@@ -486,6 +486,12 @@ body{
     padding-bottom: 80px;
     background-image: linear-gradient(to bottom right,rgba(0, 0, 0,0.6), #323153, #c50d45, rgb(226, 122, 2));
 }
-.testimonials .heading-overlap {
-    top: 30%;
+
+.testimonials .testimonial-cards{
+    width: 90%;
+    height: 550px;
+    margin: 0 auto;
+    background-image: url(Front_page_images/Testimonials/pexels-sebastian-ervi-1763075.jpg);
+    background-size: cover;
+    background-position: center;
 }
