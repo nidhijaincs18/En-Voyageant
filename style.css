@@ -2,30 +2,8 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: linear-gradient(to bottom right, #302f52, #d41e55, rgb(226, 122, 2));
-   /*background-color: rgba(0, 0, 0,0.8);*/
-    transition: 1s;
-    animation: color-animate 16s linear infinite;
 }
 
-/*@keyframes color-animate{
-    0%{
-        background: linear-gradient(to bottom right, #363553, #903775,#E8458B);
-    }
-    25%{
-        background: linear-gradient(to bottom right, rgb(0, 0, 0), rgb(219, 38, 93), rgb(228, 126, 9), rgb(221, 190, 11) );
-    }
-    50%{
-        background: linear-gradient(to bottom right, rgb(253, 52, 75), rgb(235, 48, 104), rgb(10, 191, 188)
-        );
-    }
-    75%{
-        background: linear-gradient(to bottom right, rgb(36, 221, 181), rgb(247, 126, 51));
-    }
-    100%{
-        background: linear-gradient(to bottom right, #363553, #903775,#E8458B);
-    }
-}*/
 
 /* Slideshow CSS*/
 .container{
@@ -52,11 +30,10 @@ body{
 }
 .slides .caption{
    position: absolute;
-   top: 23%;
+   top: 30%;
    left: 8%;
    width: 60%;
    color: white;
-   transform: translateY(120px);
    transition: 1s;
    box-sizing: border-box;
    padding: 5px;
@@ -414,12 +391,10 @@ body{
     width: 100%;
     position: relative;
     overflow: hidden;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
     background-image: linear-gradient(to bottom right,rgba(0, 0, 0,0.6), #323153, #c50d45, rgb(226, 122, 2));
 }
-.offerings .heading-overlap{
-    top: 11%;
-}
+
 .offering-slider{
     width: 100%;
     background-image: url(Front_page_images/asim-mondal-p1FcNjM93QY-unsplash.jpg);
@@ -501,4 +476,16 @@ body{
     font-size: 1.2rem;
     font-family: 'Marck Script';
     margin-bottom: 0;
+}
+
+/* Testimonials */
+.testimonials{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 80px;
+    background-image: linear-gradient(to bottom right,rgba(0, 0, 0,0.6), #323153, #c50d45, rgb(226, 122, 2));
+}
+.testimonials .heading-overlap {
+    top: 30%;
 }
