@@ -2,8 +2,8 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-image: linear-gradient(to bottom right, #38375c, #912e73,#cf3176);
-   /*background-color: black;*/
+    /*background-image: linear-gradient(to bottom right, #38375c, #912e73,#cf3176);*/
+   background-color: black;
     transition: 1s;
     animation: color-animate 16s linear infinite;
 }
