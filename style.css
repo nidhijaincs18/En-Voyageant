@@ -491,7 +491,53 @@ body{
     width: 90%;
     height: 550px;
     margin: 0 auto;
+    overflow: hidden;
     background-image: url(Front_page_images/Testimonials/pexels-sebastian-ervi-1763075.jpg);
     background-size: cover;
     background-position: center;
+}
+.client-cards {
+    position: relative;
+    width: 600px;
+    margin: 8rem auto 0;
+    background-color: rgba(121, 116, 116, 0.4);
+    border-radius: 10px;
+    color: white;
+    border: 1px solid yellow;
+}
+.client-cards .client-photo{
+    position: absolute;
+    top: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 140px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+.client-cards .client-photo img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+.client-cards h2{
+    font-size: 2.2rem;
+    text-align: center;
+    padding-top: 4rem;
+    margin-bottom: 0;
+    letter-spacing: 2px;
+    font-family: 'Niconne';
+}
+.client-cards p i{
+    font-size: 2.5rem;
+    opacity: 0.5;
+}
+.client-cards p{
+    margin-top: 0;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 1.6rem;
+    padding: 1rem;
+    font-family: 'Dancing Script';
+    font-weight: 600;
 }
