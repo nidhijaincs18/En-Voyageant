@@ -138,16 +138,6 @@ body{
     }
 
 }
-@keyframes float{
-    10%{
-        transform: translateY(0px);
-        visibility: visible;
-    }
-    100%{
-        transform: translateY(0px);
-        visibility: hidden;
-    }
-}
 
 
 /* Tour Cards*/
@@ -159,6 +149,7 @@ body{
     padding: 0;
     overflow: hidden;
     background-image: linear-gradient(to bottom right,rgba(0, 0, 0,0.6), rgb(50, 49, 83), rgb(197, 13, 69), rgb(226, 122, 2));
+   /* background-image: linear-gradient(to bottom right,rgba(0, 0, 0,0.6),rgb(3, 60, 75),rgb(5, 116, 146));*/
 }
 .background{
     font-size: 5.8rem;
@@ -228,7 +219,7 @@ body{
 }
 .tour-cards .cards-slider{
     position: relative;
-    /*border: 1px solid yellow;*/
+    border: 1px solid yellow;
     width: 90%;
     height: 380px;
     padding: 10px 0;
@@ -487,9 +478,9 @@ body{
     background-image: linear-gradient(to bottom right,rgba(0, 0, 0,0.6), #323153, #c50d45, rgb(226, 122, 2));
 }
 
-.testimonials .owl-carousel{
+.testimonials .testimonial-box{
     width: 90%;
-    height: 550px;
+    height: 570px;
     margin: 0 auto;
     overflow: hidden;
     background-image: url(Front_page_images/Testimonials/pexels-sebastian-ervi-1763075.jpg);
@@ -498,21 +489,21 @@ body{
 }
 .client-cards {
     position: relative;
+    display: block;
     width: 600px;
     margin: 8rem auto 0;
-    background-color: rgba(121, 116, 116, 0.4);
-    border-radius: 10px;
+    background-color: rgba(153, 147, 147, 0.4);
+    border-radius: 10px 50px;
     color: white;
-    border: 1px solid yellow;
+    box-shadow: 4px 4px 6px rgba(22, 22, 22, 0.6);
 }
 .client-cards .client-photo{
     position: absolute;
     top: -60px;
-    left: 50%;
+    left: 50%; 
     transform: translateX(-50%);
     width: 140px;
     height: 140px;
-    border: 1px solid white;
     border-radius: 50%;
 }
 .client-cards .client-photo img{
@@ -523,14 +514,15 @@ body{
 .client-cards h2{
     font-size: 2.2rem;
     text-align: center;
-    padding-top: 4rem;
+    padding-top: 5.5rem;
     margin-bottom: 0;
     letter-spacing: 2px;
     font-family: 'Niconne';
 }
 .client-cards p i{
     font-size: 2.5rem;
-    opacity: 0.5;
+    opacity: 0.6;
+    margin: 0 0.7rem;
 }
 .client-cards p{
     margin-top: 0;
@@ -538,6 +530,10 @@ body{
     letter-spacing: 2px;
     font-size: 1.6rem;
     padding: 1rem;
+    line-height: 30px;
     font-family: 'Dancing Script';
     font-weight: 600;
+}
+.owl-nav{
+    visibility: hidden;
 }
