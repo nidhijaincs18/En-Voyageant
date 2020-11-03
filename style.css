@@ -148,7 +148,7 @@ body{
     width: 100%;
     padding: 0;
     overflow: hidden;
-    background-image: linear-gradient(to bottom right,rgba(0, 0, 0, 0.8), rgb(50, 49, 83), rgb(91, 58, 117), rgb(197, 13, 69), rgb(226, 122, 2));
+    background-image: linear-gradient(to bottom right,rgba(0,0,0,0.8), rgb(85, 57, 107), rgba(197, 13, 69,0.9), rgb(226, 122, 2));
 }
 .background{
     font-size: 5.8rem;
