@@ -154,10 +154,10 @@ body{
     font-size: 5.8rem;
     font-weight: 900;
     font-family: 'Archivo Black';
-    color: rgba(199, 195, 195, 0.4);
+    color: rgba(199, 195, 195, 0.3);
     text-transform: uppercase;
     text-align: center;
-    opacity: 0.4;
+    opacity: 0.3;
 }
 .heading-overlap{
     width: 25%;
@@ -383,7 +383,7 @@ body{
     position: relative;
     overflow: hidden;
     padding-bottom: 80px;
-    background-image: linear-gradient(to bottom right,rgba(0, 0, 0,0.7), #323153, #c50d45, rgb(226, 122, 2));
+    background-image: linear-gradient(to bottom right,rgba(0,0,0,0.8), rgb(85, 57, 107), rgba(197, 13, 69,0.9), rgb(226, 122, 2));
 }
 
 .offering-slider{
@@ -475,7 +475,7 @@ body{
     position: relative;
     overflow: hidden;
     padding-bottom: 80px;
-    background-image: linear-gradient(to bottom right,rgba(0, 0, 0,0.7), #323153, #c50d45, rgb(226, 122, 2));
+    background-image: linear-gradient(to bottom right,rgba(0,0,0,0.8), rgb(85, 57, 107), rgba(197, 13, 69,0.9), rgb(226, 122, 2));
 }
 
 .testimonials .testimonial-box{
