@@ -37,6 +37,15 @@ $(function(){
   });
 });
 
- // Owl Carousel
+ function scrollAppear(){
+   var textAppear = document.querySelectorAll('.text-appear');
+   var position = textAppear.getBoundingClientRect().top;
+   var screenPosition = window.innerHeight;
+
+   if(position<screenPosition){
+     textAppear.classList.add('.text-appear');
+   }
+ }
+window.addEventListener('scroll',scrollAppear);
 
  
