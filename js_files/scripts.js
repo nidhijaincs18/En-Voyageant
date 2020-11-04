@@ -37,15 +37,33 @@ $(function(){
   });
 });
 
+// testimonial section
+
+$('.testimonial-box').owlCarousel({
+  loop:true,
+  margin:8,
+  nav:false,
+  autoplay:true,
+  autoplayTimeout:3000,
+  autoplayHoverPause:true,
+  responsive:{
+      0:{
+          items:1
+      }
+  }
+})
+
+// reveal text on scroll
+
  function scrollAppear(){
    var textAppear = document.querySelectorAll('.text-appear');
    var position = textAppear.getBoundingClientRect().top;
    var screenPosition = window.innerHeight;
 
-   if(position<screenPosition){
-     textAppear.classList.add('.text-appear');
+   if(position < screenPosition){
+     textAppear.classList.add('.fade-in');
    }
  }
-window.addEventListener('scroll',scrollAppear);
+  window.addEventListener('scroll',scrollAppear);
 
  

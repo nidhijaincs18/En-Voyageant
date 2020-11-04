@@ -180,7 +180,7 @@ body{
     display: block;
     width: 0;
     height: 3px;
-    background: linear-gradient(to right,rgb(150, 150, 150), rgb(36, 90, 172));
+    background: linear-gradient(to right,rgb(24, 24, 24), rgb(36, 90, 172));
     position: absolute;
     transition: all .3s;
 }
@@ -559,7 +559,7 @@ body{
     font-family: 'Marck Script';
     opacity: 0;
     transform: translateX(-200px);
-    transition: all 1s;
+    transition: all 0.8s ease-in-out;
 }
 .section-mid h4{
     width: 30%;
@@ -574,4 +574,17 @@ body{
 .fade-in{
     opacity: 1;
     transform: translateX(0px);
+}
+
+/*About Section*/
+
+.about-section{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 80px;
+    background-image: linear-gradient(to bottom right,rgba(0,0,0,0.8), rgb(85, 57, 107), rgba(197, 13, 69,0.9), rgb(226, 122, 2));
+}
+.about-section .heading-overlap{
+    top: 30%;
 }
