@@ -1,762 +1,762 @@
-            * {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            /* Slideshow CSS*/
-            
-            .container {
-                position: relative;
-                width: 100%;
-                height: 100vh;
-                overflow: hidden;
-            }
-            
-            .slider {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 500%;
-                height: 100%;
-                animation: sliding 15s linear infinite;
-                transition: 2s;
-            }
-            
-            .slides {
-                position: relative;
-                width: 20%;
-                height: 100%;
-                float: left;
-            }
-            
-            .slides .caption {
-                position: absolute;
-                top: 30%;
-                left: 8%;
-                width: 60%;
-                color: white;
-                transition: 1s;
-                box-sizing: border-box;
-                padding: 5px;
-                /*border: 1px solid white;*/
-            }
-            
-            .slides .caption h1 {
-                margin: 0;
-                padding: 0;
-                font-size: 3rem;
-                letter-spacing: 4px;
-                word-spacing: 4px;
-                text-shadow: 6px 5px 7px rgb(0, 0, 0);
-                font-family: 'Acme';
-            }
-            
-            .slider .caption p {
-                margin: 0;
-                padding: 5px;
-                font-size: 1.5rem;
-                line-height: 28px;
-                /*text-align: justify;*/
-                letter-spacing: 4px;
-                text-shadow: 4px 4px 5px rgb(0, 0, 0);
-                font-family: 'Grenze Gotisch';
-            }
-            
-            .caption button {
-                margin: 20px 30px 10px;
-                padding: 12px;
-                font-size: 1.2rem;
-                border-radius: 20px;
-                border: none;
-                word-spacing: 5px;
-                background-color: transparent;
-                color: white;
-                font-family: 'Acme';
-                cursor: pointer;
-                box-shadow: 4px 4px 6px black;
-                border: 1px solid rgb(226, 225, 225);
-                transition: .6s;
-            }
-            
-            .caption button i {
-                margin-right: 7px;
-            }
-            
-            .caption button:hover {
-                background-color: rgba(155, 147, 147, 0.5);
-                transform: scale(1.5, 1.5);
-                padding: 8px;
-                font-size: 1rem;
-                margin: 25px 35px 15px;
-                transition: .6s;
-                border: none;
-            }
-            
-            .slider .slide1 {
-                background-image: url(Front_page_images/pexels-yogendra-singh-3373053.jpg);
-                background-size: cover;
-                background-position: center;
-            }
-            
-            .slider .slide2 {
-                background-image: url(Front_page_images/parth-singhal-xqhIlJcVf04-unsplash.jpg);
-                background-size: cover;
-                background-position: center;
-            }
-            
-            .slider .slide3 {
-                background-image: url(Front_page_images/pexels-ashwini-chaudhary-2961109.jpg);
-                background-size: cover;
-                background-position: center;
-            }
-            
-            .slider .slide4 {
-                background-image: url(Front_page_images/sarthak-kwatra-VDXqdr_ShTo-unsplash\ \(1\).jpg);
-                background-size: cover;
-                background-position: center;
-            }
-            
-            @keyframes sliding {
-                0% {
-                    left: 0%;
-                }
-                20% {
-                    left: 0%;
-                }
-                25% {
-                    left: -100%;
-                }
-                43% {
-                    left: -100%;
-                }
-                50% {
-                    left: -200%;
-                }
-                70% {
-                    left: -200%;
-                }
-                75% {
-                    left: -300%;
-                }
-                93% {
-                    left: -300%;
-                }
-                100% {
-                    left: -400%;
-                }
-            }
-            /* Tour Cards*/
-            
-            .tour-cards {
-                position: relative;
-                box-sizing: border-box;
-                width: 100%;
-                overflow: hidden;
-                background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgb(85, 57, 107), rgba(197, 13, 69, 0.9), rgb(226, 122, 2));
-            }
-            
-            .background {
-                font-size: 5.8rem;
-                font-weight: 900;
-                font-family: 'Archivo Black';
-                color: rgba(199, 195, 195, 0.3);
-                text-transform: uppercase;
-                text-align: center;
-                opacity: 0.3;
-                margin: 2.2rem 0;
-            }
-            
-            .heading-overlap {
-                width: 25%;
-                padding: 2px;
-                margin: 0 auto;
-                text-align: center;
-                position: absolute;
-                top: 9%;
-                left: 38%;
-                z-index: 1;
-            }
-            
-            .heading-overlap h2 {
-                text-align: center;
-                font-size: 2.5rem;
-                margin: 0;
-                color: white;
-            }
-            
-            .heading-overlap h2::before,
-            .heading-overlap h2::after {
-                content: '';
-                display: block;
-                width: 0;
-                height: 3px;
-                background: linear-gradient(to right, rgb(24, 24, 24), rgb(36, 90, 172));
-                position: absolute;
-                transition: all .3s;
-            }
-            
-            .heading-overlap h2::before {
-                left: 0;
-                top: -6px;
-            }
-            
-            .heading-overlap h2::after {
-                right: 0;
-                bottom: -6px;
-            }
-            
-            .heading-overlap h2:hover::before,
-            .heading-overlap h2:hover::after {
-                width: 100%;
-            }
-            
-            .tour-cards .tour-button {
-                display: inline-block;
-                position: absolute;
-                top: 30%;
-                right: 25%;
-                border-radius: 35px;
-                text-decoration: none;
-                text-align: center;
-                color: white;
-                border: 1px solid rgba(49, 48, 48, 0.5);
-                padding: 12px 13px 8px;
-                font-size: 1.5rem;
-                font-family: 'Henny Penny';
-                box-shadow: 5px 5px 5px rgba(22, 22, 22, 0.8);
-                transition: all .3s;
-            }
-            
-            .tour-cards .tour-button:hover {
-                background-color: rgba(255, 255, 255, 0.3);
-                color: black;
-                font-weight: 600;
-            }
-            
-            .tour-cards .cards-slider {
-                position: relative;
-                border: 1px solid yellow;
-                width: 90%;
-                height: 380px;
-                padding: 10px 0;
-                margin: 10rem auto 7rem;
-                overflow: hidden;
-                transition: all .4s;
-            }
-            
-            .tour-cards .angle-right {
-                width: 3rem;
-                height: 3rem;
-                border-radius: 50%;
-                background-color: rgba(226, 222, 222, 0.3);
-                position: absolute;
-                top: 32%;
-                right: 10%;
-                font-size: 2.5rem;
-                padding: 2px;
-                transition: all .2s;
-            }
-            
-            .tour-cards .angle-left {
-                width: 3rem;
-                height: 3rem;
-                border-radius: 50%;
-                background-color: rgba(226, 222, 222, 0.3);
-                ;
-                position: absolute;
-                margin-right: 1.5rem;
-                top: 32%;
-                right: 15%;
-                font-size: 2.5rem;
-                padding: 2px;
-                transition: all .2s;
-            }
-            
-            .tour-cards i {
-                margin-left: 10px;
-            }
-            
-            .tour-cards .angle-right:hover,
-            .tour-cards .angle-left:hover {
-                cursor: pointer;
-                background-color: rgba(22, 22, 22, 0.3);
-                color: rgb(247, 242, 242);
-            }
-            
-            .cards-slider .cards {
-                position: relative;
-                background-color: #000;
-                display: inline-block;
-                width: 500px;
-                height: 380px;
-                margin: 0px 25px;
-                border-radius: 10px;
-                overflow: hidden;
-                cursor: pointer;
-                box-shadow: 6px 5px 7px rgb(0, 0, 0);
-            }
-            
-            .cards img {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                border-radius: 10px;
-                transition: all 0.5s ease-out;
-            }
-            
-            .color-overlay {
-                position: absolute;
-                top: 0;
-                left: 0;
-                border-radius: 10px;
-                width: 100%;
-                height: 100%;
-                background-color: rgb(61, 61, 61);
-                opacity: 0.2;
-                z-index: 1;
-            }
-            
-            .text-animate {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                font-size: 1rem;
-                height: 100%;
-                border-radius: 10px;
-                z-index: 3;
-            }
-            
-            .cards .text-animate h3 {
-                color: white;
-                font-size: 2rem;
-                letter-spacing: 2px;
-                word-spacing: 3px;
-                margin: 4rem 2rem 0;
-                font-family: 'Niconne';
-                transition: .4s;
-            }
-            
-            .cards .text-animate h4 {
-                color: white;
-                font-size: 1.3rem;
-                font-family: cursive;
-                margin: 0rem 2rem;
-                width: 70%;
-                word-spacing: 1px;
-            }
-            
-            .cards .text-animate p {
-                margin: 10px auto 0;
-                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-                transform: translateX(220px);
-                width: 90%;
-                height: 170px;
-                color: white;
-                opacity: 0;
-                font-size: 1.4rem;
-                padding: 5px;
-                font-family: 'Acme';
-                transition: all 0.4s ease-in-out;
-            }
-            
-            .cards:hover .text-animate h3 {
-                color: rgb(255, 123, 0);
-            }
-            
-            .cards:hover img {
-                filter: blur(5px);
-            }
-            
-            .cards:hover .text-animate p {
-                transform: translateX(0);
-                opacity: 1;
-            }
-            /* Background Parallax */
-            
-            .parallax {
-                width: 100%;
-                height: 550px;
-                color: rgba(0, 0, 0);
-                position: relative;
-                min-height: 500px;
-                background: transparent;
-            }
-            
-            .parallax h1 {
-                font-size: 3rem;
-                position: absolute;
-                top: 20%;
-                left: 30%;
-                z-index: 2;
-                font-family: 'Grenze Gotisch';
-            }
-            
-            .parallax p {
-                width: 75%;
-                text-align: center;
-                position: absolute;
-                top: 35%;
-                left: 15%;
-                font-weight: bolder;
-                font-family: 'Tangerine';
-                z-index: 2;
-                font-size: 2.5rem;
-            }
-            /* Offerings Division*/
-            
-            .offerings {
-                width: 100%;
-                position: relative;
-                overflow: hidden;
-                padding-bottom: 80px;
-                background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgb(85, 57, 107), rgba(197, 13, 69, 0.9), rgb(226, 122, 2));
-            }
-            
-            .offering-slider {
-                width: 100%;
-                background-image: url(Front_page_images/asim-mondal-p1FcNjM93QY-unsplash.jpg);
-                background-size: cover;
-                background-position: center;
-                animation: fade 24s infinite;
-            }
-            
-            @keyframes fade {
-                25% {
-                    background-image: url(Front_page_images/melissa-cassar-wJEuwP4aaNU-unsplash.jpg);
-                    background-size: cover;
-                    background-position: center;
-                }
-                50% {
-                    background-image: url(Front_page_images/todd-kent--BwKdtTCpw0-unsplash.jpg);
-                    background-size: cover;
-                    background-position: center;
-                }
-                75% {
-                    background-image: url(Front_page_images/arnav-jain-94E9Q4T9OmU-unsplash.jpg);
-                    background-size: cover;
-                    background-position: center;
-                }
-                100% {
-                    background-image: url(Front_page_images/asim-mondal-p1FcNjM93QY-unsplash.jpg);
-                    background-size: cover;
-                    background-position: center;
-                }
-            }
-            
-            .offering-cards {
-                width: 100%;
-                height: 100%;
-                background-color: rgba(73, 71, 71, 0.3);
-            }
-            
-            .offering-cards .services {
-                width: 100%;
-                height: 50%;
-                display: flex;
-                justify-content: space-evenly;
-                flex-wrap: wrap;
-                padding: 10px;
-            }
-            
-            .offering-cards .services .service-list {
-                box-sizing: border-box;
-                border-radius: 5px;
-                width: 28%;
-                padding: 10px;
-                margin: 10px 0;
-                background-color: rgba(0, 0, 0, 0.6);
-                box-shadow: 3px 3px 5px rgba(32, 32, 32, 0.5);
-            }
-            
-            .offering-cards .services .service-list span {
-                width: 80px;
-                height: 80px;
-                display: block;
-                text-align: center;
-                border-radius: 50%;
-                margin: 0 auto;
-                overflow: hidden;
-                background: radial-gradient(rgb(231, 8, 64), rgb(248, 182, 58));
-            }
-            
-            .offering-cards .services .service-list span i {
-                font-size: 2.5rem;
-                color: white;
-                margin: 1.2rem 1rem;
-            }
-            
-            .offering-cards .services .service-list h1 {
-                color: white;
-                text-align: center;
-                letter-spacing: 2px;
-                font-size: 2.2rem;
-                line-height: 26px;
-                margin: 20px 0px;
-                font-family: 'Permanent Marker';
-            }
-            
-            .offering-cards .services .service-list p {
-                color: white;
-                text-align: center;
-                font-size: 1.2rem;
-                font-family: 'Marck Script';
-                margin-bottom: 0;
-            }
-            /* Testimonials */
-            
-            .testimonials {
-                width: 100%;
-                position: relative;
-                overflow: hidden;
-                padding-bottom: 80px;
-                background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgb(85, 57, 107), rgba(197, 13, 69, 0.9), rgb(226, 122, 2));
-            }
-            
-            .testimonials .testimonial-box {
-                width: 90%;
-                height: 570px;
-                margin: 0 auto;
-                overflow: hidden;
-                background-image: url(Front_page_images/Testimonials/pexels-sebastian-ervi-1763075.jpg);
-                background-size: cover;
-                background-position: center;
-            }
-            
-            .client-cards {
-                position: relative;
-                display: block;
-                width: 600px;
-                height: 330px;
-                margin: 8rem auto 1.5rem;
-                background-color: rgba(153, 147, 147, 0.4);
-                border-radius: 10px 50px;
-                color: white;
-                box-shadow: 4px 4px 6px rgba(22, 22, 22, 0.6);
-            }
-            
-            .client-cards .client-photo {
-                position: absolute;
-                top: -60px;
-                left: 50%;
-                transform: translateX(-50%);
-                width: 140px;
-                height: 140px;
-                border-radius: 50%;
-            }
-            
-            .client-cards .client-photo img {
-                width: 140px;
-                height: 140px;
-                border-radius: 50%;
-            }
-            
-            .client-cards h2 {
-                font-size: 2.2rem;
-                text-align: center;
-                padding-top: 5.5rem;
-                margin-bottom: 0;
-                letter-spacing: 2px;
-                font-family: 'Niconne';
-            }
-            
-            .client-cards p i {
-                font-size: 2.5rem;
-                opacity: 0.6;
-                margin: 0 0.7rem;
-            }
-            
-            .client-cards p {
-                margin-top: 0;
-                text-align: center;
-                letter-spacing: 2px;
-                font-size: 1.6rem;
-                padding: 1rem;
-                line-height: 30px;
-                font-family: 'Dancing Script';
-                font-weight: 600;
-            }
-            /*Middle Section*/
-            
-            .section-mid {
-                width: 100%;
-                height: 150px;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                padding: 8px 5px;
-                color: white;
-                box-sizing: border-box;
-                background-image: url(Front_page_images/luis-villasmil-DAvuR-9V3ag-unsplash.jpg);
-                background-size: cover;
-                background-position: center;
-                overflow: hidden;
-            }
-            
-            .section-mid h2 {
-                position: relative;
-                width: 25%;
-                font-size: 2.2rem;
-                font-family: 'Marck Script';
-                opacity: 0;
-                transform: translateX(-200px);
-                transition: all 1s ease-in-out;
-            }
-            
-            .section-mid h4 {
-                position: relative;
-                width: 30%;
-                margin-right: 25px;
-                font-size: 1.5rem;
-                font-family: 'Niconne';
-                letter-spacing: 2.5px;
-                opacity: 0;
-                transform: translateX(200px);
-                transition: all 1s ease-in-out;
-                transition-delay: 1.2s;
-            }
-            
-            .fadein {
-                opacity: 1;
-                transform: translateX(0px);
-            }
-            /*About Section*/
-            
-            .about-section {
-                width: 100%;
-                position: relative;
-                overflow: hidden;
-                background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgb(85, 57, 107), rgba(197, 13, 69, 0.9), rgb(226, 122, 2));
-                padding-bottom: 50px;
-            }
-            
-            .about-section .heading-overlap {
-                top: 8%;
-            }
-            
-            .intro-about {
-                width: 100%;
-                margin: 0;
-                padding: 0;
-            }
-            
-            .intro-about::after {
-                content: '';
-                display: block;
-                clear: both;
-            }
-            
-            .intro-about .about {
-                position: relative;
-                float: left;
-                width: 50%;
-                height: 330px;
-                background-image: url(Front_page_images/team/old-1130731_1920.jpg);
-                background-size: cover;
-                background-position: center;
-            }
-            
-            .intro-about .about h2 {
-                position: absolute;
-                top: 15%;
-                left: 5%;
-                width: 75%;
-                font-size: 3.5rem;
-                text-align: center;
-                padding: 20px;
-                box-sizing: border-box;
-            }
-            
-            .intro-about .about-content {
-                float: right;
-                width: 50%;
-                height: 330px;
-                box-sizing: border-box;
-                padding: 20px;
-                background-color: #fff;
-            }
-            
-            .intro-about .about-content p {
-                font-size: 1.2rem;
-                word-spacing: 0.5rem;
-                text-align: justify;
-                font-family: 'Grenze Gotisch';
-            }
-            
-            .team-members {
-                width: 100%;
-                background-color: #000;
-                color: white;
-                box-sizing: border-box;
-                padding: 10px 0px 30px;
-            }
-            
-            .team-members h2 {
-                text-align: center;
-                font-family: 'Acme';
-                font-size: 2.2rem;
-                letter-spacing: 2px;
-                margin-bottom: 10px;
-            }
-            
-            .member-intro {
-                width: 100%;
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                padding: 20px 10px 10px;
-            }
-            
-            .member {
-                width: 15%;
-            }
-            
-            .member img {
-                width: 100%;
-                height: 200px;
-            }
-            
-            .member .name {
-                width: 100%;
-                height: 50px;
-                text-align: center;
-                padding-top: 10px;
-                font-size: 1.5rem;
-                letter-spacing: 2px;
-                font-family: 'Niconne';
-                background-color: #fff;
-                color: #000;
-                font-weight: 600;
-            }
-            /*Last Section*/
-            
-            .last-section {
-                width: 100%;
-                height: 450px;
-                background-image: url(Front_page_images/pexels-visually-us-1526790.jpg);
-                background-size: cover;
-                background-position: center;
-                position: absolute;
-            }
-            
-            .last-section .content {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                background-color: rgba(0, 0, 0, 0.2);
-            }
-            
-            .last-section .content h1 {
-                position: absolute;
-                top: 15%;
-                left: 22%;
-                color: #fff;
-                font-size: 3rem;
-                font-family: 'Acme';
-                letter-spacing: 2px;
-                word-spacing: 3px;
-            }
+   * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+   }
+   /* Slideshow CSS*/
+   
+   .container {
+       position: relative;
+       width: 100%;
+       height: 100vh;
+       overflow: hidden;
+   }
+   
+   .slider {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 500%;
+       height: 100%;
+       animation: sliding 15s linear infinite;
+       transition: 2s;
+   }
+   
+   .slides {
+       position: relative;
+       width: 20%;
+       height: 100%;
+       float: left;
+   }
+   
+   .slides .caption {
+       position: absolute;
+       top: 30%;
+       left: 8%;
+       width: 60%;
+       color: white;
+       transition: 1s;
+       box-sizing: border-box;
+       padding: 5px;
+       /*border: 1px solid white;*/
+   }
+   
+   .slides .caption h1 {
+       margin: 0;
+       padding: 0;
+       font-size: 3rem;
+       letter-spacing: 4px;
+       word-spacing: 4px;
+       text-shadow: 6px 5px 7px rgb(0, 0, 0);
+       font-family: 'Acme';
+   }
+   
+   .slider .caption p {
+       margin: 0;
+       padding: 5px;
+       font-size: 1.5rem;
+       line-height: 28px;
+       /*text-align: justify;*/
+       letter-spacing: 4px;
+       text-shadow: 4px 4px 5px rgb(0, 0, 0);
+       font-family: 'Grenze Gotisch';
+   }
+   
+   .caption button {
+       margin: 20px 30px 10px;
+       padding: 12px;
+       font-size: 1.2rem;
+       border-radius: 20px;
+       border: none;
+       word-spacing: 5px;
+       background-color: transparent;
+       color: white;
+       font-family: 'Acme';
+       cursor: pointer;
+       box-shadow: 4px 4px 6px black;
+       border: 1px solid rgb(226, 225, 225);
+       transition: .6s;
+   }
+   
+   .caption button i {
+       margin-right: 7px;
+   }
+   
+   .caption button:hover {
+       background-color: rgba(155, 147, 147, 0.5);
+       transform: scale(1.5, 1.5);
+       padding: 8px;
+       font-size: 1rem;
+       margin: 25px 35px 15px;
+       transition: .6s;
+       border: none;
+   }
+   
+   .slider .slide1 {
+       background-image: url(Front_page_images/pexels-yogendra-singh-3373053.jpg);
+       background-size: cover;
+       background-position: center;
+   }
+   
+   .slider .slide2 {
+       background-image: url(Front_page_images/parth-singhal-xqhIlJcVf04-unsplash.jpg);
+       background-size: cover;
+       background-position: center;
+   }
+   
+   .slider .slide3 {
+       background-image: url(Front_page_images/pexels-ashwini-chaudhary-2961109.jpg);
+       background-size: cover;
+       background-position: center;
+   }
+   
+   .slider .slide4 {
+       background-image: url(Front_page_images/sarthak-kwatra-VDXqdr_ShTo-unsplash\ \(1\).jpg);
+       background-size: cover;
+       background-position: center;
+   }
+   
+   @keyframes sliding {
+       0% {
+           left: 0%;
+       }
+       20% {
+           left: 0%;
+       }
+       25% {
+           left: -100%;
+       }
+       43% {
+           left: -100%;
+       }
+       50% {
+           left: -200%;
+       }
+       70% {
+           left: -200%;
+       }
+       75% {
+           left: -300%;
+       }
+       93% {
+           left: -300%;
+       }
+       100% {
+           left: -400%;
+       }
+   }
+   /* Tour Cards*/
+   
+   .tour-cards {
+       position: relative;
+       box-sizing: border-box;
+       width: 100%;
+       overflow: hidden;
+       background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgb(85, 57, 107), rgba(197, 13, 69, 0.9), rgb(226, 122, 2));
+   }
+   
+   .background {
+       font-size: 5.8rem;
+       font-weight: 900;
+       font-family: 'Archivo Black';
+       color: rgba(199, 195, 195, 0.3);
+       text-transform: uppercase;
+       text-align: center;
+       opacity: 0.3;
+       margin: 2.2rem 0;
+   }
+   
+   .heading-overlap {
+       width: 25%;
+       padding: 2px;
+       margin: 0 auto;
+       text-align: center;
+       position: absolute;
+       top: 9%;
+       left: 38%;
+       z-index: 1;
+   }
+   
+   .heading-overlap h2 {
+       text-align: center;
+       font-size: 2.5rem;
+       margin: 0;
+       color: white;
+   }
+   
+   .heading-overlap h2::before,
+   .heading-overlap h2::after {
+       content: '';
+       display: block;
+       width: 0;
+       height: 3px;
+       background: linear-gradient(to right, rgb(24, 24, 24), rgb(36, 90, 172));
+       position: absolute;
+       transition: all .3s;
+   }
+   
+   .heading-overlap h2::before {
+       left: 0;
+       top: -6px;
+   }
+   
+   .heading-overlap h2::after {
+       right: 0;
+       bottom: -6px;
+   }
+   
+   .heading-overlap h2:hover::before,
+   .heading-overlap h2:hover::after {
+       width: 100%;
+   }
+   
+   .tour-cards .tour-button {
+       display: inline-block;
+       position: absolute;
+       top: 30%;
+       right: 25%;
+       border-radius: 35px;
+       text-decoration: none;
+       text-align: center;
+       color: white;
+       border: 1px solid rgba(49, 48, 48, 0.5);
+       padding: 12px 13px 8px;
+       font-size: 1.5rem;
+       font-family: 'Henny Penny';
+       box-shadow: 5px 5px 5px rgba(22, 22, 22, 0.8);
+       transition: all .3s;
+   }
+   
+   .tour-cards .tour-button:hover {
+       background-color: rgba(255, 255, 255, 0.3);
+       color: black;
+       font-weight: 600;
+   }
+   
+   .tour-cards .cards-slider {
+       position: relative;
+       border: 1px solid yellow;
+       width: 90%;
+       height: 380px;
+       padding: 10px 0;
+       margin: 10rem auto 7rem;
+       overflow: hidden;
+       transition: all .4s;
+   }
+   
+   .tour-cards .angle-right {
+       width: 3rem;
+       height: 3rem;
+       border-radius: 50%;
+       background-color: rgba(226, 222, 222, 0.3);
+       position: absolute;
+       top: 32%;
+       right: 10%;
+       font-size: 2.5rem;
+       padding: 2px;
+       transition: all .2s;
+   }
+   
+   .tour-cards .angle-left {
+       width: 3rem;
+       height: 3rem;
+       border-radius: 50%;
+       background-color: rgba(226, 222, 222, 0.3);
+       ;
+       position: absolute;
+       margin-right: 1.5rem;
+       top: 32%;
+       right: 15%;
+       font-size: 2.5rem;
+       padding: 2px;
+       transition: all .2s;
+   }
+   
+   .tour-cards i {
+       margin-left: 10px;
+   }
+   
+   .tour-cards .angle-right:hover,
+   .tour-cards .angle-left:hover {
+       cursor: pointer;
+       background-color: rgba(22, 22, 22, 0.3);
+       color: rgb(247, 242, 242);
+   }
+   
+   .cards-slider .cards {
+       position: relative;
+       background-color: #000;
+       display: inline-block;
+       width: 500px;
+       height: 380px;
+       margin: 0px 25px;
+       border-radius: 10px;
+       overflow: hidden;
+       cursor: pointer;
+       box-shadow: 6px 5px 7px rgb(0, 0, 0);
+   }
+   
+   .cards img {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       border-radius: 10px;
+       transition: all 0.5s ease-out;
+   }
+   
+   .color-overlay {
+       position: absolute;
+       top: 0;
+       left: 0;
+       border-radius: 10px;
+       width: 100%;
+       height: 100%;
+       background-color: rgb(61, 61, 61);
+       opacity: 0.2;
+       z-index: 1;
+   }
+   
+   .text-animate {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       font-size: 1rem;
+       height: 100%;
+       border-radius: 10px;
+       z-index: 3;
+   }
+   
+   .cards .text-animate h3 {
+       color: white;
+       font-size: 2rem;
+       letter-spacing: 2px;
+       word-spacing: 3px;
+       margin: 4rem 2rem 0;
+       font-family: 'Niconne';
+       transition: .4s;
+   }
+   
+   .cards .text-animate h4 {
+       color: white;
+       font-size: 1.3rem;
+       font-family: cursive;
+       margin: 0rem 2rem;
+       width: 70%;
+       word-spacing: 1px;
+   }
+   
+   .cards .text-animate p {
+       margin: 10px auto 0;
+       text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+       transform: translateX(220px);
+       width: 90%;
+       height: 170px;
+       color: white;
+       opacity: 0;
+       font-size: 1.4rem;
+       padding: 5px;
+       font-family: 'Acme';
+       transition: all 0.4s ease-in-out;
+   }
+   
+   .cards:hover .text-animate h3 {
+       color: rgb(255, 123, 0);
+   }
+   
+   .cards:hover img {
+       filter: blur(5px);
+   }
+   
+   .cards:hover .text-animate p {
+       transform: translateX(0);
+       opacity: 1;
+   }
+   /* Background Parallax */
+   
+   .parallax {
+       width: 100%;
+       height: 550px;
+       color: rgba(0, 0, 0);
+       position: relative;
+       min-height: 500px;
+       background: transparent;
+   }
+   
+   .parallax h1 {
+       font-size: 3rem;
+       position: absolute;
+       top: 20%;
+       left: 30%;
+       z-index: 2;
+       font-family: 'Grenze Gotisch';
+   }
+   
+   .parallax p {
+       width: 75%;
+       text-align: center;
+       position: absolute;
+       top: 35%;
+       left: 15%;
+       font-weight: bolder;
+       font-family: 'Tangerine';
+       z-index: 2;
+       font-size: 2.5rem;
+   }
+   /* Offerings Division*/
+   
+   .offerings {
+       width: 100%;
+       position: relative;
+       overflow: hidden;
+       padding-bottom: 80px;
+       background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgb(85, 57, 107), rgba(197, 13, 69, 0.9), rgb(226, 122, 2));
+   }
+   
+   .offering-slider {
+       width: 100%;
+       background-image: url(Front_page_images/asim-mondal-p1FcNjM93QY-unsplash.jpg);
+       background-size: cover;
+       background-position: center;
+       animation: fade 24s infinite;
+   }
+   
+   @keyframes fade {
+       25% {
+           background-image: url(Front_page_images/melissa-cassar-wJEuwP4aaNU-unsplash.jpg);
+           background-size: cover;
+           background-position: center;
+       }
+       50% {
+           background-image: url(Front_page_images/todd-kent--BwKdtTCpw0-unsplash.jpg);
+           background-size: cover;
+           background-position: center;
+       }
+       75% {
+           background-image: url(Front_page_images/arnav-jain-94E9Q4T9OmU-unsplash.jpg);
+           background-size: cover;
+           background-position: center;
+       }
+       100% {
+           background-image: url(Front_page_images/asim-mondal-p1FcNjM93QY-unsplash.jpg);
+           background-size: cover;
+           background-position: center;
+       }
+   }
+   
+   .offering-cards {
+       width: 100%;
+       height: 100%;
+       background-color: rgba(73, 71, 71, 0.3);
+   }
+   
+   .offering-cards .services {
+       width: 100%;
+       height: 50%;
+       display: flex;
+       justify-content: space-evenly;
+       flex-wrap: wrap;
+       padding: 10px;
+   }
+   
+   .offering-cards .services .service-list {
+       box-sizing: border-box;
+       border-radius: 5px;
+       width: 28%;
+       padding: 10px;
+       margin: 10px 0;
+       background-color: rgba(0, 0, 0, 0.6);
+       box-shadow: 3px 3px 5px rgba(32, 32, 32, 0.5);
+   }
+   
+   .offering-cards .services .service-list span {
+       width: 80px;
+       height: 80px;
+       display: block;
+       text-align: center;
+       border-radius: 50%;
+       margin: 0 auto;
+       overflow: hidden;
+       background: radial-gradient(rgb(231, 8, 64), rgb(248, 182, 58));
+   }
+   
+   .offering-cards .services .service-list span i {
+       font-size: 2.5rem;
+       color: white;
+       margin: 1.2rem 1rem;
+   }
+   
+   .offering-cards .services .service-list h1 {
+       color: white;
+       text-align: center;
+       letter-spacing: 2px;
+       font-size: 2.2rem;
+       line-height: 26px;
+       margin: 20px 0px;
+       font-family: 'Permanent Marker';
+   }
+   
+   .offering-cards .services .service-list p {
+       color: white;
+       text-align: center;
+       font-size: 1.2rem;
+       font-family: 'Marck Script';
+       margin-bottom: 0;
+   }
+   /* Testimonials */
+   
+   .testimonials {
+       width: 100%;
+       position: relative;
+       overflow: hidden;
+       padding-bottom: 80px;
+       background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgb(85, 57, 107), rgba(197, 13, 69, 0.9), rgb(226, 122, 2));
+   }
+   
+   .testimonials .testimonial-box {
+       width: 90%;
+       height: 570px;
+       margin: 0 auto;
+       overflow: hidden;
+       background-image: url(Front_page_images/Testimonials/pexels-sebastian-ervi-1763075.jpg);
+       background-size: cover;
+       background-position: center;
+   }
+   
+   .client-cards {
+       position: relative;
+       display: block;
+       width: 600px;
+       height: 330px;
+       margin: 8rem auto 1.5rem;
+       background-color: rgba(153, 147, 147, 0.4);
+       border-radius: 10px 50px;
+       color: white;
+       box-shadow: 4px 4px 6px rgba(22, 22, 22, 0.6);
+   }
+   
+   .client-cards .client-photo {
+       position: absolute;
+       top: -60px;
+       left: 50%;
+       transform: translateX(-50%);
+       width: 140px;
+       height: 140px;
+       border-radius: 50%;
+   }
+   
+   .client-cards .client-photo img {
+       width: 140px;
+       height: 140px;
+       border-radius: 50%;
+   }
+   
+   .client-cards h2 {
+       font-size: 2.2rem;
+       text-align: center;
+       padding-top: 5.5rem;
+       margin-bottom: 0;
+       letter-spacing: 2px;
+       font-family: 'Niconne';
+   }
+   
+   .client-cards p i {
+       font-size: 2.5rem;
+       opacity: 0.6;
+       margin: 0 0.7rem;
+   }
+   
+   .client-cards p {
+       margin-top: 0;
+       text-align: center;
+       letter-spacing: 2px;
+       font-size: 1.6rem;
+       padding: 1rem;
+       line-height: 30px;
+       font-family: 'Dancing Script';
+       font-weight: 600;
+   }
+   /*Middle Section*/
+   
+   .section-mid {
+       width: 100%;
+       height: 150px;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       padding: 8px 5px;
+       color: white;
+       box-sizing: border-box;
+       background-image: url(Front_page_images/luis-villasmil-DAvuR-9V3ag-unsplash.jpg);
+       background-size: cover;
+       background-position: center;
+       overflow: hidden;
+   }
+   
+   .section-mid h2 {
+       position: relative;
+       width: 25%;
+       font-size: 2.2rem;
+       font-family: 'Marck Script';
+       opacity: 0;
+       transform: translateX(-200px);
+       transition: all 1s ease-in-out;
+   }
+   
+   .section-mid h4 {
+       position: relative;
+       width: 30%;
+       margin-right: 25px;
+       font-size: 1.5rem;
+       font-family: 'Niconne';
+       letter-spacing: 2.5px;
+       opacity: 0;
+       transform: translateX(200px);
+       transition: all 1s ease-in-out;
+       transition-delay: 1.2s;
+   }
+   
+   .fadein {
+       opacity: 1;
+       transform: translateX(0px);
+   }
+   /*About Section*/
+   
+   .about-section {
+       width: 100%;
+       position: relative;
+       overflow: hidden;
+       background-image: linear-gradient(to bottom right, rgba(0, 0, 0, 0.8), rgb(85, 57, 107), rgba(197, 13, 69, 0.9), rgb(226, 122, 2));
+       padding-bottom: 50px;
+   }
+   
+   .about-section .heading-overlap {
+       top: 8%;
+   }
+   
+   .intro-about {
+       width: 100%;
+       margin: 0;
+       padding: 0;
+   }
+   
+   .intro-about::after {
+       content: '';
+       display: block;
+       clear: both;
+   }
+   
+   .intro-about .about {
+       position: relative;
+       float: left;
+       width: 50%;
+       height: 330px;
+       background-image: url(Front_page_images/team/old-1130731_1920.jpg);
+       background-size: cover;
+       background-position: center;
+   }
+   
+   .intro-about .about h2 {
+       position: absolute;
+       top: 15%;
+       left: 5%;
+       width: 75%;
+       font-size: 3.5rem;
+       text-align: center;
+       padding: 20px;
+       box-sizing: border-box;
+   }
+   
+   .intro-about .about-content {
+       float: right;
+       width: 50%;
+       height: 330px;
+       box-sizing: border-box;
+       padding: 20px;
+       background-color: #fff;
+   }
+   
+   .intro-about .about-content p {
+       font-size: 1.2rem;
+       word-spacing: 0.5rem;
+       text-align: justify;
+       font-family: 'Grenze Gotisch';
+   }
+   
+   .team-members {
+       width: 100%;
+       background-color: #000;
+       color: white;
+       box-sizing: border-box;
+       padding: 10px 0px 30px;
+   }
+   
+   .team-members h2 {
+       text-align: center;
+       font-family: 'Acme';
+       font-size: 2.2rem;
+       letter-spacing: 2px;
+       margin-bottom: 10px;
+   }
+   
+   .member-intro {
+       width: 100%;
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+       padding: 20px 10px 10px;
+   }
+   
+   .member {
+       width: 15%;
+   }
+   
+   .member img {
+       width: 100%;
+       height: 200px;
+   }
+   
+   .member .name {
+       width: 100%;
+       height: 50px;
+       text-align: center;
+       padding-top: 10px;
+       font-size: 1.5rem;
+       letter-spacing: 2px;
+       font-family: 'Niconne';
+       background-color: #fff;
+       color: #000;
+       font-weight: 600;
+   }
+   /*Last Section*/
+   
+   .last-section {
+       width: 100%;
+       height: 450px;
+       background-image: url(Front_page_images/pexels-visually-us-1526790.jpg);
+       background-size: cover;
+       background-position: center;
+       position: absolute;
+   }
+   
+   .last-section .content {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: rgba(0, 0, 0, 0.2);
+   }
+   
+   .last-section .content h1 {
+       position: absolute;
+       top: 15%;
+       left: 22%;
+       color: #fff;
+       font-size: 3rem;
+       font-family: 'Acme';
+       letter-spacing: 2px;
+       word-spacing: 3px;
+   }
