@@ -57,16 +57,16 @@ $('.testimonial-box').owlCarousel({
 window.addEventListener('scroll', scrollAppear);
 
 function scrollAppear() {
-    var textAppear = document.querySelectorAll('.text-appear');
+    var textAppear = document.querySelectorAll(".text-appear");
 
     for (var i = 0; i < textAppear.length; i++) {
         var windowHeight = window.innerHeight;
         var revealTop = textAppear[i].getBoundingClientRect().top;
 
         if (revealTop < windowHeight) {
-            textAppear[i].classList.add('fadein');
+            textAppear[i].classList.add("fadein");
         } else {
-            textAppear[i].classList.remove('fadein');
+            textAppear[i].classList.remove("fadein");
         }
     }
 }
