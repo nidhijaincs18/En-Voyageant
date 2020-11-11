@@ -99,25 +99,25 @@ html {
 }
 
 .slider .slide1 {
-    background-image: url(Front_page_images/pexels-yogendra-singh-3373053.jpg);
+    background-image: url(/Front_page_images/pexels-yogendra-singh-3373053.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .slider .slide2 {
-    background-image: url(Front_page_images/parth-singhal-xqhIlJcVf04-unsplash.jpg);
+    background-image: url(/Front_page_images/parth-singhal-xqhIlJcVf04-unsplash.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .slider .slide3 {
-    background-image: url(Front_page_images/pexels-ashwini-chaudhary-2961109.jpg);
+    background-image: url(/Front_page_images/pexels-ashwini-chaudhary-2961109.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .slider .slide4 {
-    background-image: url(Front_page_images/sarthak-kwatra-VDXqdr_ShTo-unsplash\ \(1\).jpg);
+    background-image: url(/Front_page_images/sarthak-kwatra-VDXqdr_ShTo-unsplash\ \(1\).jpg);
     background-size: cover;
     background-position: center;
 }
@@ -445,7 +445,7 @@ html {
 
 .offering-slider {
     width: 100%;
-    background-image: url(Front_page_images/asim-mondal-p1FcNjM93QY-unsplash.jpg);
+    background-image: url(/Front_page_images/asim-mondal-p1FcNjM93QY-unsplash.jpg);
     background-size: cover;
     background-position: center;
     animation: fade 24s infinite;
@@ -453,22 +453,22 @@ html {
 
 @keyframes fade {
     25% {
-        background-image: url(Front_page_images/melissa-cassar-wJEuwP4aaNU-unsplash.jpg);
+        background-image: url(/Front_page_images/melissa-cassar-wJEuwP4aaNU-unsplash.jpg);
         background-size: cover;
         background-position: center;
     }
     50% {
-        background-image: url(Front_page_images/todd-kent--BwKdtTCpw0-unsplash.jpg);
+        background-image: url(/Front_page_images/todd-kent--BwKdtTCpw0-unsplash.jpg);
         background-size: cover;
         background-position: center;
     }
     75% {
-        background-image: url(Front_page_images/arnav-jain-94E9Q4T9OmU-unsplash.jpg);
+        background-image: url(/Front_page_images/arnav-jain-94E9Q4T9OmU-unsplash.jpg);
         background-size: cover;
         background-position: center;
     }
     100% {
-        background-image: url(Front_page_images/asim-mondal-p1FcNjM93QY-unsplash.jpg);
+        background-image: url(/Front_page_images/asim-mondal-p1FcNjM93QY-unsplash.jpg);
         background-size: cover;
         background-position: center;
     }
@@ -550,7 +550,7 @@ html {
     height: 570px;
     margin: 0 auto;
     overflow: hidden;
-    background-image: url(Front_page_images/Testimonials/pexels-sebastian-ervi-1763075.jpg);
+    background-image: url(/Front_page_images/Testimonials/pexels-sebastian-ervi-1763075.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -621,7 +621,7 @@ html {
     padding: 8px 5px;
     color: white;
     box-sizing: border-box;
-    background-image: url(Front_page_images/luis-villasmil-DAvuR-9V3ag-unsplash.jpg);
+    background-image: url(/Front_page_images/luis-villasmil-DAvuR-9V3ag-unsplash.jpg);
     background-size: cover;
     background-position: center;
     overflow: hidden;
@@ -687,7 +687,7 @@ html {
     float: left;
     width: 50%;
     height: 330px;
-    background-image: url(Front_page_images/team/old-1130731_1920.jpg);
+    background-image: url(/Front_page_images/team/old-1130731_1920.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -771,7 +771,7 @@ html {
 .last-section {
     width: 100%;
     height: 430px;
-    background-image: url(Front_page_images/pexels-visually-us-1526790.jpg);
+    background-image: url(/Front_page_images/pexels-visually-us-1526790.jpg);
     position: relative;
     background-size: cover;
     background-position: center;
