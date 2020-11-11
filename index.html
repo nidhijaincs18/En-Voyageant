@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css_files/owl.carousel.css">
     <link rel="stylesheet" href="css_files/owl.theme.default.min.css">
 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="./css_files/style.css">
 
 </head>
@@ -224,8 +226,6 @@
                             We provide the best packages that are mostly chosen and help you to prepare your itinerary to take a tour.
                         </p>
                     </div>
-                </div>
-                <div class="services">
                     <div class="service-list">
                         <span><i class="fa fa-cutlery" aria-hidden="true"></i></span>
                         <h1>Places to visit near your destination</h1>
@@ -308,8 +308,8 @@
     <!--Middle Section-->
 
     <div class="section-mid">
-        <h2 class="text-appear">Experience the zest, travel with us</h2>
-        <h4 class="text-appear">Stop dreaming about your bucket list and start living it, Memories are timeless!</h4>
+        <h2 data-aos="fade-right">Experience the zest, travel with us</h2>
+        <h4 data-aos="fade-left">Stop dreaming about your bucket list and start living it, Memories are timeless!</h4>
     </div>
 
     <!--About Us Section-->
@@ -410,6 +410,12 @@
     <!--Owl Carousel-->
     <script src="./js_files/jquery.min.js"></script>
     <script src="./js_files/owl.carousel.js"></script>
+
+    <!--Animation on Scroll-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <!-- Custom Script-->
     <script src="js_files/scripts.js"></script>
 </body>
