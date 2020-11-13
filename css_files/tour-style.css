@@ -189,3 +189,35 @@ nav ul li:hover::after {
     border-radius: 50%;
     margin-bottom: 20px;
 }
+
+
+/*Destination Cards*/
+
+.destination-box {
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(120deg, #1f3f4d, #693233);
+    position: relative;
+}
+
+.destination-box .destin-heading {
+    width: 43%;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    padding: 10px;
+    color: lightgray;
+}
+
+.destination-box .destin-heading h2 {
+    font-family: 'Grenze Gotisch';
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+.destination-box .destin-heading h2 span {
+    display: inline-block;
+    font-size: 3rem;
+    font-family: 'Kaushan Script';
+    color: #d4875b;
+}
