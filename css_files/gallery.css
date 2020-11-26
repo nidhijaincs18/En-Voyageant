@@ -107,7 +107,8 @@
     .gallery-container {
         position: relative;
         width: 100%;
-        height: 800px;
+        height: 200vh;
+        overflow: hidden;
         background-image: url(../Gallery_images/pexels-anni-roenkae-3435249.jpg);
         background-size: cover;
         background-position: center;
@@ -119,12 +120,18 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.4);
     }
     
-    .gallery h1 {
+    .black-box {
+        width: 100%;
+        height: 240em;
+        background-color: #000;
+    }
+    
+    h1 {
         position: absolute;
-        top: 15%;
+        top: 10%;
         left: 50%;
         transform: translateX(-50%);
         text-transform: uppercase;
@@ -135,4 +142,30 @@
         background-size: cover;
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
+    }
+    
+    .gallery-images {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 10px;
+        border: 1px solid white;
+        z-index: 2;
+    }
+    
+    .column {
+        flex: 33.2%;
+        max-width: 33.2%;
+        padding: 0 10px;
+    }
+    
+    .column img {
+        margin-top: 20px;
+        vertical-align: middle;
+        border-radius: 8px;
+        width: 100%;
     }
