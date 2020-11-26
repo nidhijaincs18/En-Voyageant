@@ -1,0 +1,138 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    /*Navigation Bar*/
+    
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 50px;
+        transition: 0.6s;
+        z-index: 100000;
+        overflow: hidden;
+        border-bottom: 2px solid grey;
+    }
+    
+    nav.sticky {
+        padding: 5px 40px;
+        background-color: #000;
+        border-bottom: none;
+    }
+    
+    nav .logo-div {
+        position: relative;
+        width: 25%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.6s;
+    }
+    
+    nav .logo-div img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    nav .logo-div .logo {
+        font-size: 2.8rem;
+        text-decoration: none;
+        color: white;
+        font-family: 'Marck Script';
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+    
+    nav .logo-div .logo span {
+        color: orange;
+        font-family: 'Grenze Gotisch';
+    }
+    
+    nav ul {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav ul li {
+        list-style: none;
+        position: relative;
+    }
+    
+    nav ul li a {
+        position: relative;
+        text-decoration: none;
+        color: white;
+        margin: 0 15px;
+        font-size: 1.5rem;
+        font-family: 'Grenze Gotisch';
+        letter-spacing: 1px;
+        transition: 0.7s;
+    }
+    
+    nav ul li a.active {
+        color: orange;
+    }
+    
+    nav ul li::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 3px;
+        background-color: #fff;
+        position: absolute;
+        transition: all 0.6s;
+    }
+    
+    nav ul li a:hover {
+        color: orange;
+    }
+    
+    nav ul li:hover::after {
+        width: 100%;
+    }
+    /*Galley Container*/
+    
+    .gallery-container {
+        position: relative;
+        width: 100%;
+        height: 800px;
+        background-image: url(../Gallery_images/pexels-anni-roenkae-3435249.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .gallery {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+    .gallery h1 {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-transform: uppercase;
+        font-family: 'Kaushan Script';
+        letter-spacing: 10px;
+        font-size: 7rem;
+        background: url(../Gallery_images/erol-ahmed-mfEeaOfacTQ-unsplash.jpg) 50% 50%;
+        background-size: cover;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
