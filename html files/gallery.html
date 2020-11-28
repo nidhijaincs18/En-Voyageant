@@ -20,27 +20,33 @@
             <img src="../Front_page_images/logo.png" alt="logo">
             <a href="#" class="logo"><span>en</span>Voyageant</a>
         </div>
-        <ul class="list">
-            <li>
-                <a href="../index.html">Home</a>
-            </li>
-            <li>
-                <a href="../html files/destinations.html">Destinations</a>
-            </li>
-            <li>
-                <a href="#">Visiting Places</a>
-            </li>
-            <li>
-                <a href="#">Hotels</a>
-            </li>
-            <li>
-                <a href="#" class="active">Gallery</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
+        <div class="menu-toggle"></div>
+        <div class="nav-bar">
+            <ul class="list">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="../html files/destinations.html">Destinations</a>
+                </li>
+                <!--<li>
+                    <a href="#">Visiting Places</a>
+                </li>-->
+                <li>
+                    <a href="#">Hotels</a>
+                </li>
+                <li>
+                    <a href="#" class="active">Gallery</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
+                </li>
 
-        </ul>
+            </ul>
+        </div>
     </nav>
 
     <!--Gallery Container-->
@@ -128,6 +134,16 @@
 
     </div>
 
+    <!--JQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.menu-toggle').click(function() {
+                $('.menu-toggle').toggleClass('active')
+                $('.nav-bar').toggleClass('active')
+            })
+        })
+    </script>
     <!--Script-->
     <script src="../js_files/tour-script.js "></script>
 </body>

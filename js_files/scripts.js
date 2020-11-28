@@ -5,6 +5,13 @@ window.addEventListener("scroll", function() {
     nav.classList.toggle("sticky", window.scrollY > 0);
 })
 
+$(document).ready(function() {
+    $('.menu-toggle').click(function() {
+        $('.menu-toggle').toggleClass('active')
+        $('.nav-bar').toggleClass('active')
+    })
+})
+
 //Tour Cards
 
 $('.cards-slider').owlCarousel({

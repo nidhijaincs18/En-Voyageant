@@ -1,348 +1,436 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-
-/*Navigation Bar*/
-
-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    transition: 0.6s;
-    z-index: 100000;
-    overflow: hidden;
-    border-bottom: 2px solid grey;
-}
-
-nav.sticky {
-    padding: 5px 40px;
-    background-color: #000;
-    border-bottom: none;
-}
-
-nav .logo-div {
-    position: relative;
-    width: 25%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 0.6s;
-}
-
-nav .logo-div img {
-    width: 60px;
-    height: 60px;
-}
-
-nav .logo-div .logo {
-    font-size: 2.8rem;
-    text-decoration: none;
-    color: white;
-    font-family: 'Marck Script';
-    font-weight: 600;
-    letter-spacing: 3px;
-}
-
-nav .logo-div .logo span {
-    color: orange;
-    font-family: 'Grenze Gotisch';
-}
-
-nav ul {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav ul li {
-    list-style: none;
-    position: relative;
-}
-
-nav ul li a {
-    position: relative;
-    text-decoration: none;
-    color: white;
-    margin: 0 15px;
-    font-size: 1.5rem;
-    font-family: 'Grenze Gotisch';
-    letter-spacing: 1px;
-    transition: 0.7s;
-}
-
-nav ul li a.active {
-    color: orange;
-}
-
-nav ul li::after {
-    content: '';
-    display: block;
-    width: 0;
-    height: 3px;
-    background-color: #fff;
-    position: absolute;
-    transition: all 0.6s;
-}
-
-nav ul li a:hover {
-    color: orange;
-}
-
-nav ul li:hover::after {
-    width: 100%;
-}
-
-
-/*Galley Container*/
-
-.gallery-container {
-    position: relative;
-    width: 100%;
-    height: 200vh;
-    overflow: hidden;
-    background-image: url(../Gallery_images/pexels-anni-roenkae-3435249.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.gallery {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
-}
-
-.black-box {
-    width: 100%;
-    height: 257em;
-    position: relative;
-    background-color: #000;
-}
-
-.gallery h1 {
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    text-transform: uppercase;
-    font-family: 'Kaushan Script';
-    letter-spacing: 10px;
-    font-size: 7rem;
-    background: url(../Gallery_images/erol-ahmed-mfEeaOfacTQ-unsplash.jpg) 50% 50%;
-    background-size: cover;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
-.gallery-images {
-    width: 95%;
-    position: absolute;
-    top: 50%;
-    left: 2%;
-    padding: 10px;
-    z-index: 2;
-    column-count: 3;
-    column-gap: 20px;
-}
-
-.gallery-images img {
-    margin-top: 20px;
-    border-radius: 8px;
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-
-/*Footer*/
-
-.black-box .footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    color: white;
-    background-color: rgb(44, 45, 49);
-}
-
-.upper-part {
-    width: 100%;
-    padding: 20px 20px 10px;
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    font-family: 'Marck Script';
-}
-
-.logo-details {
-    width: 28%;
-    padding: 8px;
-}
-
-.logo-details h1 {
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-    padding-left: 1.5rem;
-}
-
-.logo-details h1 span {
-    color: orange;
-    font-size: 2.3rem;
-    font-family: 'Grenze Gotisch';
-}
-
-.logo-details h1 i {
-    margin-right: 12px;
-    font-size: 2.5rem;
-}
-
-.logo-details p {
-    font-size: 1.2rem;
-    line-height: 24px;
-}
-
-.links {
-    width: 15%;
-    padding: 15px 8px 8px;
-}
-
-.links a {
-    font-size: 1.5rem;
-    padding: 5px;
-}
-
-.upper-part a {
-    text-decoration: none;
-    color: white;
-    text-align: justify;
-    display: block;
-    font-weight: 600;
-    transition: 0.5s;
-    letter-spacing: 1.5px;
-}
-
-.upper-part a:hover {
-    color: orange;
-}
-
-.contact {
-    width: 25%;
-    padding: 12px 8px;
-}
-
-.contact h1 {
-    padding: 5px;
-}
-
-.contact a {
-    font-size: 1.2rem;
-    padding: 10px;
-    letter-spacing: 2px;
-}
-
-.contact a i {
-    margin-right: 12px;
-}
-
-hr {
-    color: gray;
-    width: 95%;
-    margin: 0 auto;
-    opacity: 0.4;
-}
-
-.lower-part {
-    width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.lower-part p {
-    color: gray;
-    font-size: 1.1rem;
-}
-
-.lower-part .icons {
-    margin-right: 50px;
-    padding: 5px;
-}
-
-.lower-part .icons i {
-    margin-right: 2rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.lower-part .icons a {
-    text-decoration: none;
-    color: white;
-}
-
-.lower-part .icons i:last-child {
-    margin-right: 0px;
-    margin-left: 3.5rem;
-    font-size: 2.5rem;
-}
-
-.lower-part .icons i:nth-child(1):hover {
-    color: #3b5999;
-}
-
-.lower-part .icons i:nth-child(2):hover {
-    color: #55acee;
-}
-
-.lower-part .icons i:nth-child(3):hover {
-    color: #bd081c;
-}
-
-.lower-part .icons i:nth-child(4):hover {
-    color: #0077B5;
-}
-
-.lower-part .icons i:nth-child(5):hover {
-    color: #e4405f;
-}
-
-.lower-part .icons i:last-child:hover {
-    color: lightseagreen;
-}
-
-
-/*Responsive*/
-
-@media screen and (max-width: 820px) {
-    .gallery-images {
-        column-count: 2;
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
+    
+    html {
+        scroll-behavior: smooth;
+    }
+    /*Navigation Bar*/
+    
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 40px 10px 50px;
+        transition: 0.6s;
+        z-index: 100000;
+        overflow: hidden;
+        border-bottom: 2px solid grey;
+    }
+    
+    nav .logo-div {
+        position: relative;
+        display: flex;
+        align-items: center;
+        transition: 0.6s;
+        float: left;
+    }
+    
+    nav .logo-div img {
+        width: 60px;
+        height: 60px;
+        margin-right: 10px;
+    }
+    
+    nav .logo-div .logo {
+        font-size: 2.8rem;
+        text-decoration: none;
+        color: white;
+        font-family: 'Marck Script';
+        font-weight: 600;
+        letter-spacing: 3px;
+    }
+    
+    nav .logo-div .logo span {
+        color: orange;
+        font-family: 'Grenze Gotisch';
+    }
+    
+    nav .nav-bar {
+        position: relative;
+        float: right;
+        padding: 10px;
+        margin: 5px 0;
+    }
+    
+    nav::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    nav ul li {
+        position: relative;
+        list-style: none;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        display: block;
+        color: white;
+        margin: 0 15px;
+        font-size: 1.5rem;
+        font-family: 'Grenze Gotisch';
+        letter-spacing: 1px;
+        transition: 0.6s;
+        padding: 0 2px;
+    }
+    
+    nav ul li a.active {
+        color: orange;
+    }
+    
+    nav ul li::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 3px;
+        background-color: #fff;
+        position: absolute;
+        transition: all 0.6s;
+    }
+    
+    nav ul li a:hover {
+        color: orange;
+    }
+    
+    nav ul li:hover::after {
+        width: 100%;
+    }
+    
+    nav ul li:last-child:hover::after {
+        width: 0%;
+    }
+    
+    nav.sticky {
+        padding: 5px 35px;
+        background-color: #000;
+        border-bottom: none;
+    }
+    /*Galley Container*/
+    
+    .gallery-container {
+        position: relative;
+        width: 100%;
+        height: 200vh;
+        overflow: hidden;
+        background-image: url(../Gallery_images/pexels-anni-roenkae-3435249.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    
+    .gallery {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+    
     .black-box {
-        height: 350em;
+        width: 100%;
+        height: 257em;
+        position: relative;
+        background-color: #000;
     }
-}
-
-@media screen and (max-width: 600px) {
+    
+    .gallery h1 {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        text-transform: uppercase;
+        font-family: 'Kaushan Script';
+        letter-spacing: 10px;
+        font-size: 7rem;
+        background: url(../Gallery_images/erol-ahmed-mfEeaOfacTQ-unsplash.jpg) 50% 50%;
+        background-size: cover;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    
     .gallery-images {
-        column-count: 1;
+        width: 95%;
+        position: absolute;
+        top: 50%;
+        left: 2%;
+        padding: 10px;
+        z-index: 2;
+        column-count: 3;
+        column-gap: 20px;
     }
-    .black-box {
-        height: 870em;
+    
+    .gallery-images img {
+        margin-top: 20px;
+        border-radius: 8px;
+        width: 100%;
+        height: 100%;
+        display: block;
     }
-}
+    /*Footer*/
+    
+    .black-box .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        color: white;
+        background-color: rgb(44, 45, 49);
+    }
+    
+    .upper-part {
+        width: 100%;
+        padding: 20px 20px 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        font-family: 'Marck Script';
+    }
+    
+    .logo-details {
+        width: 28%;
+        padding: 8px;
+    }
+    
+    .logo-details h1 {
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+        padding-left: 1.5rem;
+    }
+    
+    .logo-details h1 span {
+        color: orange;
+        font-size: 2.3rem;
+        font-family: 'Grenze Gotisch';
+    }
+    
+    .logo-details h1 i {
+        margin-right: 12px;
+        font-size: 2.5rem;
+    }
+    
+    .logo-details p {
+        font-size: 1.2rem;
+        line-height: 24px;
+    }
+    
+    .links {
+        width: 15%;
+        padding: 15px 8px 8px;
+    }
+    
+    .links a {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+    
+    .upper-part a {
+        text-decoration: none;
+        color: white;
+        text-align: justify;
+        display: block;
+        font-weight: 600;
+        transition: 0.5s;
+        letter-spacing: 1.5px;
+    }
+    
+    .upper-part a:hover {
+        color: orange;
+    }
+    
+    .contact {
+        width: 25%;
+        padding: 12px 8px;
+    }
+    
+    .contact h1 {
+        padding: 5px;
+    }
+    
+    .contact a {
+        font-size: 1.2rem;
+        padding: 10px;
+        letter-spacing: 2px;
+    }
+    
+    .contact a i {
+        margin-right: 12px;
+    }
+    
+    hr {
+        color: gray;
+        width: 95%;
+        margin: 0 auto;
+        opacity: 0.4;
+    }
+    
+    .lower-part {
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .lower-part p {
+        color: gray;
+        font-size: 1.1rem;
+    }
+    
+    .lower-part .icons {
+        margin-right: 50px;
+        padding: 5px;
+    }
+    
+    .lower-part .icons i {
+        margin-right: 2rem;
+        font-size: 1.5rem;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    
+    .lower-part .icons a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .lower-part .icons i:last-child {
+        margin-right: 0px;
+        margin-left: 3.5rem;
+        font-size: 2.5rem;
+    }
+    
+    .lower-part .icons i:nth-child(1):hover {
+        color: #3b5999;
+    }
+    
+    .lower-part .icons i:nth-child(2):hover {
+        color: #55acee;
+    }
+    
+    .lower-part .icons i:nth-child(3):hover {
+        color: #bd081c;
+    }
+    
+    .lower-part .icons i:nth-child(4):hover {
+        color: #0077B5;
+    }
+    
+    .lower-part .icons i:nth-child(5):hover {
+        color: #e4405f;
+    }
+    
+    .lower-part .icons i:last-child:hover {
+        color: lightseagreen;
+    }
+    /*Responsive*/
+    
+    @media screen and (max-width: 1080px) {
+        nav {
+            padding: 20px 10px 10px;
+        }
+        nav .logo-div img {
+            width: 55px;
+            height: 55px;
+        }
+        nav .logo-div .logo {
+            font-size: 2.2rem;
+        }
+        nav.sticky {
+            padding: 5px 10px;
+        }
+        nav .nav-bar {
+            padding: 5px;
+        }
+        nav .nav-bar ul li a {
+            padding: 0;
+            margin: 0 10px;
+        }
+    }
+    
+    @media screen and (max-width: 840px) {
+        .gallery-images {
+            column-count: 2;
+        }
+        .black-box {
+            height: 370em;
+        }
+        nav {
+            padding: 20px 40px 10px 30px;
+            background-color: #000;
+            border-bottom: none;
+        }
+        .menu-toggle {
+            display: block;
+            width: 45px;
+            height: 45px;
+            float: right;
+            margin: 10px;
+            text-align: center;
+            cursor: pointer;
+            color: white;
+            font-size: 32px;
+            padding-top: 5px;
+        }
+        .menu-toggle::before {
+            content: '\f0c9';
+            font-family: fontAwesome;
+            line-height: 40px;
+            transition: 0.4s;
+        }
+        .menu-toggle.active::before {
+            content: '\f00d';
+        }
+        .nav-bar {
+            display: none;
+        }
+        .nav-bar.active {
+            display: block;
+            width: 100%;
+            background-color: #000;
+        }
+        .nav-bar.active ul {
+            display: block;
+            text-align: center;
+        }
+        .nav-bar.active li {
+            padding: 10px 0;
+        }
+        .nav-bar.active li:last-child {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width: 600px) {
+        .gallery-images {
+            column-count: 1;
+        }
+        .black-box {
+            height: 870em;
+        }
+        .menu-toggle {
+            margin: 0px;
+            font-size: 30px;
+        }
+        .gallery h1 {
+            letter-spacing: 7px;
+            font-size: 6rem;
+        }
+    }
+    
+    @media screen and (max-width: 480px) {
+        .gallery h1 {
+            letter-spacing: 7px;
+            font-size: 4.5rem;
+        }
+    }
