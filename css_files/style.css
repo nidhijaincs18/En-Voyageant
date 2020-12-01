@@ -196,6 +196,7 @@
         box-shadow: 4px 4px 6px black;
         border: 1px solid rgb(226, 225, 225);
         transition: .6s;
+        outline: none;
     }
     
     .caption button i {
