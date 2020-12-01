@@ -544,7 +544,7 @@ hr {
     main {
         position: relative;
         width: 100%;
-        height: 180vh;
+        height: 210vh;
         overflow: hidden;
     }
     .content h1 {
@@ -553,11 +553,25 @@ hr {
     .content .contact-details {
         position: absolute;
         top: 20%;
+        padding: 0 20px;
     }
     .contact-details form {
         float: none;
         width: 100%;
-        padding: 15px 30px;
+        padding: 15px 25px;
+    }
+    .contact-details form .names {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .contact-details form .names .first {
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+    .contact-details form .names .first,
+    .contact-details form .names .last {
+        width: 100%;
     }
     .content .contact-details .details {
         float: none;
@@ -605,10 +619,7 @@ hr {
     }
     /*Video Container*/
     main {
-        position: relative;
-        width: 100%;
-        height: 190vh;
-        overflow: hidden;
+        height: 215vh;
     }
     .content h1 {
         top: 8%;
@@ -616,7 +627,7 @@ hr {
     }
     .content .contact-details {
         position: absolute;
-        top: 17%;
+        top: 15%;
     }
     .contact-details form {
         float: none;
@@ -625,7 +636,7 @@ hr {
     }
     .contact-details form button {
         padding: 5px 50px;
-        margin-left: 27px;
+        margin-left: 15%;
     }
     .content .contact-details .details {
         float: none;
