@@ -563,6 +563,18 @@
     }
     /*Responsive*/
     
+    @media screen and (max-width: 1300px) {
+        /*Destination Cards*/
+        .destination-box .card-box {
+            top: 4%;
+            padding: 20px 20px 0px;
+        }
+        .card-box .card-design {
+            width: 46%;
+            margin: 0 15px 40px;
+        }
+    }
+    
     @media screen and (max-width: 1080px) {
         nav {
             padding: 20px 10px 10px;
@@ -824,7 +836,7 @@
         }
         /*Destination Cards*/
         .destination-box {
-            height: 368em;
+            height: 378em;
         }
         .card-box .card-design .content p {
             font-size: 1rem;
