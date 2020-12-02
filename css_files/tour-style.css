@@ -209,7 +209,7 @@ nav.sticky {
 
 .destination-box {
     width: 100%;
-    height: 140.2em;
+    height: 141.1em;
     background-image: linear-gradient(120deg, #1f3f4d, #693233);
     position: relative;
     overflow: hidden;
@@ -383,6 +383,7 @@ nav.sticky {
     left: 50%;
     transform: translateX(-50%);
     box-shadow: 0px 0px 4px rgb(153, 152, 152);
+    margin-bottom: 12px;
 }
 
 .destination-box .pagination a {
@@ -405,12 +406,207 @@ nav.sticky {
 }
 
 
+/*Footer*/
+
+.footer {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    background-color: rgb(44, 45, 49);
+}
+
+.upper-part {
+    width: 100%;
+    padding: 20px 20px 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: 'Marck Script';
+}
+
+.logo-details {
+    width: 28%;
+    padding: 8px;
+    text-align: center;
+}
+
+.logo-details h1 {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.logo-details h1 span {
+    display: inline;
+    color: orange;
+    font-size: 2.3rem;
+    font-family: 'Grenze Gotisch';
+}
+
+.logo-details h1 i {
+    font-size: 2.5rem;
+}
+
+.logo-details p {
+    font-size: 1.2rem;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.links {
+    width: 15%;
+    padding: 15px 8px 8px;
+}
+
+.links a {
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.upper-part a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+    letter-spacing: 1.5px;
+}
+
+.upper-part a:hover {
+    color: orange;
+}
+
+.contact {
+    width: 25%;
+    padding: 12px 8px;
+}
+
+.contact h1 {
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+
+.contact a {
+    font-size: 1.2rem;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+.contact a i {
+    margin-right: 12px;
+}
+
+hr {
+    color: gray;
+    width: 95%;
+    margin: 0 auto;
+    opacity: 0.4;
+}
+
+.lower-part {
+    width: 100%;
+    padding: 20px;
+}
+
+.lower-part p {
+    color: gray;
+    font-size: 1.1rem;
+    float: left;
+    margin: 20px 10px;
+}
+
+.lower-part .icons {
+    margin-right: 30px;
+    float: right;
+    position: relative;
+}
+
+.lower-part::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.lower-part .icons ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.lower-part .icons ul li {
+    list-style: none;
+}
+
+.lower-part .icons ul li i {
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1.5rem;
+}
+
+.lower-part .icons li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.lower-part .icons li:nth-of-type(1) a:hover i {
+    color: #3b5999;
+}
+
+.lower-part .icons li:nth-of-type(2) a:hover i {
+    color: #55acee;
+}
+
+.lower-part .icons li:nth-of-type(3) a:hover i {
+    color: #bd081c;
+}
+
+.lower-part .icons li:nth-of-type(4) a:hover i {
+    color: #0077B5;
+}
+
+.lower-part .icons li:nth-of-type(5) a:hover i {
+    color: #e4405f;
+}
+
+.lower-part .icons li:nth-of-type(6) a:hover i {
+    color: #20b2aa;
+    transform: scale(2, 2);
+}
+
+
 /*Responsive*/
+
+@media screen and (max-width: 1080px) {
+    nav {
+        padding: 20px 10px 10px;
+    }
+    nav .logo-div img {
+        width: 55px;
+        height: 55px;
+    }
+    nav .logo-div .logo {
+        font-size: 2.2rem;
+    }
+    nav.sticky {
+        padding: 5px 10px;
+    }
+    nav .nav-bar {
+        padding: 5px;
+    }
+    nav .nav-bar ul li a {
+        padding: 0;
+        margin: 0 10px;
+    }
+}
 
 @media screen and (max-width: 840px) {
     nav {
         padding: 20px 40px 10px 30px;
         background-color: #000;
+        border-bottom: none;
     }
     .menu-toggle {
         display: block;
@@ -451,11 +647,165 @@ nav.sticky {
     .nav-bar.active li:last-child {
         display: none;
     }
+    /*Footer*/
+    .upper-part {
+        padding: 20px 10px 10px;
+    }
+    .logo-details {
+        padding: 0px;
+    }
+    .logo-details h1 span {
+        font-size: 2rem;
+    }
+    .logo-details h1 i {
+        font-size: 2rem;
+    }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 610px) {
     .menu-toggle {
         margin: 0px;
         font-size: 30px;
+    }
+    /*Image Slider*/
+    .slides .content {
+        bottom: 12%;
+        width: 65%;
+    }
+    .slides .content h2 {
+        width: 100%;
+        font-size: 2rem;
+        word-spacing: 2px;
+        margin-bottom: 8px;
+    }
+    .slides .content p {
+        width: 100%;
+        padding: 8px;
+        font-size: 1.4rem;
+    }
+    /*Destination Cards*/
+    .destination-box {
+        height: 368em;
+    }
+    .destination-box .destin-heading {
+        width: 100%;
+        top: 0;
+        left: 0;
+        padding: 7px;
+    }
+    .destination-box .card-box {
+        top: 2%;
+        padding: 15px 12px 0px;
+    }
+    .card-box .card-design {
+        width: 100%;
+        float: none;
+        margin: 0 0px 40px;
+        box-shadow: 0px 2px 4px 2px rgb(117, 116, 116);
+    }
+    .card-box .card-design .content {
+        height: auto;
+    }
+    .card-box .card-design .content h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    .destination-box .pagination {
+        bottom: 0;
+    }
+    /*Footer*/
+    .upper-part {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .logo-details {
+        width: 100%;
+    }
+    .links {
+        width: 100%;
+        padding: 15px;
+    }
+    .contact {
+        width: 100%;
+        padding: 15px;
+    }
+    .lower-part p {
+        float: none;
+        text-align: center;
+    }
+    .lower-part .icons {
+        margin: 10px;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        padding: 20px 10px 10px;
+    }
+    nav .logo-div img {
+        margin-right: 5px;
+    }
+    nav .logo-div .logo {
+        font-size: 2.3rem;
+        letter-spacing: 2px;
+    }
+    /*Image Slider*/
+    .slides .content {
+        bottom: 10%;
+        width: 65%;
+    }
+    .slides .content h2 {
+        width: 100%;
+        font-size: 1.8rem;
+        word-spacing: 2px;
+        margin-bottom: 8px;
+    }
+    .slides .content p {
+        width: 100%;
+        padding: 8px;
+        font-size: 1.4rem;
+    }
+    /*Destination Cards*/
+    .destination-box {
+        height: 368em;
+    }
+    .card-box .card-design .content p {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+    .destination-box .pagination a {
+        padding: 8px 10px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    nav .logo-div .logo {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
+    /*Image Slider*/
+    .slides .content {
+        bottom: 5%;
+        width: 63%;
+    }
+    .slides .content h2 {
+        width: 100%;
+        font-size: 1.5rem;
+        word-spacing: 2px;
+        margin-bottom: 8px;
+    }
+    .slides .content p {
+        width: 100%;
+        padding: 8px;
+        font-size: 1.2rem;
+    }
+    /*Destination Cards*/
+    .destination-box {
+        height: 441em;
+    }
+    .destination-box .pagination {
+        bottom: 0;
     }
 }
