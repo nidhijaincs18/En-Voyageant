@@ -1,0 +1,516 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*Navigation Bar*/
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 40px 10px 50px;
+    transition: 0.6s;
+    z-index: 100000;
+    overflow: hidden;
+}
+
+nav .logo-div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    transition: 0.6s;
+    float: left;
+}
+
+nav .logo-div img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+nav .logo-div .logo {
+    font-size: 2.8rem;
+    text-decoration: none;
+    color: white;
+    font-family: 'Marck Script';
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+nav .logo-div .logo span {
+    color: orange;
+    font-family: 'Grenze Gotisch';
+}
+
+nav .nav-bar {
+    position: relative;
+    float: right;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+nav::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    position: relative;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    margin: 0 15px;
+    font-size: 1.5rem;
+    font-family: 'Grenze Gotisch';
+    letter-spacing: 1px;
+    transition: 0.6s;
+    padding: 0 2px;
+}
+
+nav ul li a.active {
+    color: orange;
+}
+
+nav ul li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    transition: all 0.6s;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+nav ul li:hover::after {
+    width: 100%;
+}
+
+nav ul li:last-child:hover::after {
+    width: 0%;
+}
+
+nav.sticky {
+    padding: 5px 35px;
+    background-color: #000;
+}
+
+
+/*Slider*/
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slider .banner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slider .banner .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.slider .banner img {
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: zoom-out 4s linear infinite;
+}
+
+@keyframes zoom-out {
+    100% {
+        width: 100%;
+    }
+}
+
+.slider .banner .text-box {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-family: 'Ranchers';
+    letter-spacing: 5px;
+    word-spacing: 8px;
+}
+
+.slider .banner .text-box h1 {
+    color: #fff;
+    font-size: 3.2rem;
+}
+
+.slider #banner1 {
+    animation: slide1 16s linear infinite;
+}
+
+.slider #banner2 {
+    animation: slide2 16s linear infinite;
+}
+
+.slider #banner3 {
+    animation: slide3 16s linear infinite;
+}
+
+.slider #banner4 {
+    animation: slide4 16s linear infinite;
+}
+
+@keyframes slide1 {
+    0% {
+        visibility: visible;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    75% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+@keyframes slide2 {
+    0% {
+        visibility: hidden;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: visible;
+    }
+    75% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes slide3 {
+    0% {
+        visibility: hidden;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    75% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+
+@keyframes slide4 {
+    0% {
+        visibility: hidden;
+    }
+    25% {
+        visibility: hidden;
+    }
+    50% {
+        visibility: hidden;
+    }
+    75% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+
+
+/*Availability*/
+
+.available {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom right, rgb(179, 67, 67), rgb(138, 52, 52), rgb(163, 64, 163));
+    overflow: hidden;
+    position: relative;
+}
+
+.available form {
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+    padding: 20px 25px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 2px rgba(0, 0, 0, 0.7);
+}
+
+.available form .part {
+    float: left;
+    width: 17%;
+    margin: 15px 20px;
+}
+
+.available form::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.available form .part label {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: cursive;
+    margin: 0 0 10px 10px;
+}
+
+.available form .part input,
+select {
+    width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid brown;
+    outline: none;
+    padding: 10px;
+    background-color: transparent;
+}
+
+.available form button {
+    padding: 15px;
+    font-size: 0.9rem;
+    font-family: cursive;
+    color: #fff;
+    background-color: rgb(182, 67, 67);
+    border: none;
+    outline: none;
+    margin-left: 15px;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+.available .mid-line {
+    width: 95%;
+    height: 15px;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 5px auto;
+}
+
+.available .hotels {
+    width: 100%;
+    height: auto;
+    border: 1px solid white;
+    margin: 20px 0;
+}
+
+.available h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin: 0 25px;
+    padding: 5px 15px 15px;
+    font-family: 'Kaushan Script';
+    text-transform: uppercase;
+}
+
+.available .hotels .hotel-city {
+    display: flex;
+    flex-wrap: wrap;
+    width: 94%;
+    height: auto;
+    margin: 10px auto;
+    position: relative;
+    border: 1px solid red;
+}
+
+.available .hotels .hotel-city .design {
+    width: 23%;
+    height: auto;
+    float: left;
+    overflow: hidden;
+    border: 1px solid yellow;
+    position: relative;
+    margin: 0 12px;
+}
+
+.available .hotels .hotel-city .design .image {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.hotel-city .design .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.available .overlay-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.design:hover .image .overlay-hidden {
+    opacity: 1;
+}
+
+.available .overlay-hidden i {
+    font-size: 2.5rem;
+    color: white;
+    opacity: 0.6;
+}
+
+.available .hotels .hotel-city .design .content {
+    width: 100%;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.available .hotels .hotel-city .design .content a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+.design .content a:hover {
+    border-bottom: 1px solid #000;
+}
+
+.available .hotels .hotel-city .design .content h4 {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.available .hotels .hotel-city .design .content h4 span {
+    font-size: 1.5rem;
+    color: seagreen;
+}
+
+.available .rooms {
+    width: 100%;
+    height: auto;
+    border: 1px solid white;
+    margin: 20px 0;
+}
+
+.available .rooms .room-types {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    padding: 0 20px;
+    position: relative;
+    border: 1px solid red;
+}
+
+.available .rooms .room-design {
+    width: 30%;
+    height: auto;
+    float: left;
+    overflow: hidden;
+    border: 1px solid yellow;
+    position: relative;
+    border-radius: 8px;
+    margin: 0px 20px 20px;
+}
+
+.rooms .room-design .image {
+    width: 100%;
+    height: 210px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.rooms .room-design img {
+    width: 100%;
+    height: 100%;
+}
+
+.rooms .room-design .image .price {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fff;
+    color: grey;
+    padding: 5px;
+}
+
+.rooms .room-design .content-room {
+    padding: 15px;
+    background-color: #fff;
+    color: grey;
+    text-align: center;
+    position: relative;
+}
+
+.room-design .content-room h2 {
+    font-size: 1.8rem;
+    font-family: 'Acme';
+    margin-bottom: 8px;
+}
+
+.room-design .content-room h4 {
+    font-size: 1rem;
+    font-family: cursive;
+    margin-bottom: 12px;
+}
+
+.room-design .content-room hr {
+    width: 20%;
+    margin: 5px auto;
+}
