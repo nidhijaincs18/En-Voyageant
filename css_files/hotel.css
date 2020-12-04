@@ -307,7 +307,7 @@ nav.sticky {
 }
 
 .available form .part input,
-select {
+.available form .part select {
     width: 100%;
     border-top: none;
     border-left: none;
@@ -452,7 +452,7 @@ select {
     flex-wrap: wrap;
     width: 100%;
     height: auto;
-    padding: 0 20px;
+    padding: 10px 20px 0;
     position: relative;
     border: 1px solid red;
 }
@@ -513,4 +513,388 @@ select {
 .room-design .content-room hr {
     width: 20%;
     margin: 5px auto;
+}
+
+
+/*Bookings*/
+
+.booking {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 30px;
+}
+
+.booking form {
+    float: left;
+    width: 32%;
+    margin: 20px 30px 20px 100px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7);
+}
+
+.booking form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-family: 'Permanent Marker';
+    letter-spacing: 2px;
+    color: grey;
+}
+
+.booking form input,
+.booking form select {
+    margin-bottom: 18px;
+    padding: 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid grey;
+    outline: none;
+    font-size: 1rem;
+    color: grey;
+}
+
+.booking form input::placeholder,
+.booking form select option {
+    font-size: 1rem;
+}
+
+.booking form button {
+    padding: 12px;
+    width: 80%;
+    margin: 10px auto;
+    font-size: 1.2rem;
+    font-family: cursive;
+    font-weight: 600;
+    background-color: rgb(197, 99, 99);
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.booking iframe {
+    float: right;
+    margin-top: 20px;
+    width: 48%;
+}
+
+.booking::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/*Footer*/
+
+.footer {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    background-color: rgb(44, 45, 49);
+}
+
+.upper-part {
+    width: 100%;
+    padding: 20px 20px 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: 'Marck Script';
+}
+
+.logo-details {
+    width: 28%;
+    padding: 8px;
+    text-align: center;
+}
+
+.logo-details h1 {
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.logo-details h1 span {
+    display: inline;
+    color: orange;
+    font-size: 2.3rem;
+    font-family: 'Grenze Gotisch';
+}
+
+.logo-details h1 i {
+    font-size: 2.5rem;
+}
+
+.logo-details p {
+    font-size: 1.2rem;
+    line-height: 24px;
+    text-align: justify;
+}
+
+.links {
+    width: 15%;
+    padding: 15px 8px 8px;
+}
+
+.links a {
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.upper-part a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-weight: 600;
+    transition: 0.5s;
+    letter-spacing: 1.5px;
+}
+
+.upper-part a:hover {
+    color: orange;
+}
+
+.contact {
+    width: 25%;
+    padding: 12px 8px;
+}
+
+.contact h1 {
+    padding: 5px;
+    border-bottom: 1px solid white;
+}
+
+.contact a {
+    font-size: 1.2rem;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+.contact a i {
+    margin-right: 12px;
+}
+
+hr {
+    color: gray;
+    width: 95%;
+    margin: 0 auto;
+    opacity: 0.4;
+}
+
+.lower-part {
+    width: 100%;
+    padding: 20px;
+}
+
+.lower-part p {
+    color: gray;
+    font-size: 1.1rem;
+    float: left;
+    margin: 20px 10px;
+}
+
+.lower-part .icons {
+    margin-right: 30px;
+    float: right;
+    position: relative;
+}
+
+.lower-part::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.lower-part .icons ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.lower-part .icons ul li {
+    list-style: none;
+}
+
+.lower-part .icons ul li i {
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 1.5rem;
+}
+
+.lower-part .icons li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.lower-part .icons li:nth-of-type(1) a:hover i {
+    color: #3b5999;
+}
+
+.lower-part .icons li:nth-of-type(2) a:hover i {
+    color: #55acee;
+}
+
+.lower-part .icons li:nth-of-type(3) a:hover i {
+    color: #bd081c;
+}
+
+.lower-part .icons li:nth-of-type(4) a:hover i {
+    color: #0077B5;
+}
+
+.lower-part .icons li:nth-of-type(5) a:hover i {
+    color: #e4405f;
+}
+
+.lower-part .icons li:nth-of-type(6) a:hover i {
+    color: #20b2aa;
+    transform: scale(2, 2);
+}
+
+
+/*Responsive*/
+
+@media screen and (max-width: 1080px) {
+    nav {
+        padding: 20px 10px 10px;
+    }
+    nav .logo-div img {
+        width: 55px;
+        height: 55px;
+    }
+    nav .logo-div .logo {
+        font-size: 2.2rem;
+    }
+    nav.sticky {
+        padding: 5px 10px;
+    }
+    nav .nav-bar {
+        padding: 5px;
+    }
+    nav .nav-bar ul li a {
+        padding: 0;
+        margin: 0 10px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    nav {
+        padding: 20px 40px 10px 30px;
+        background-color: #000;
+        border-bottom: none;
+    }
+    .menu-toggle {
+        display: block;
+        width: 45px;
+        height: 45px;
+        float: right;
+        margin: 10px;
+        text-align: center;
+        cursor: pointer;
+        color: white;
+        font-size: 32px;
+        padding-top: 5px;
+    }
+    .menu-toggle::before {
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 40px;
+        transition: 0.4s;
+    }
+    .menu-toggle.active::before {
+        content: '\f00d';
+    }
+    .nav-bar {
+        display: none;
+    }
+    .nav-bar.active {
+        display: block;
+        width: 100%;
+        background-color: #000;
+    }
+    .nav-bar.active ul {
+        display: block;
+        text-align: center;
+    }
+    .nav-bar.active li {
+        padding: 10px 0;
+    }
+    .nav-bar.active li:last-child {
+        display: none;
+    }
+    /*Bookings*/
+    /*Footer*/
+    .upper-part {
+        padding: 20px 10px 10px;
+    }
+    .logo-details {
+        padding: 0px;
+    }
+    .logo-details h1 span {
+        font-size: 2rem;
+    }
+    .logo-details h1 i {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .menu-toggle {
+        margin: 0px;
+        font-size: 30px;
+    }
+    /*Footer*/
+    .upper-part {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .logo-details {
+        width: 100%;
+    }
+    .links {
+        width: 100%;
+        padding: 15px;
+    }
+    .contact {
+        width: 100%;
+        padding: 15px;
+    }
+    .lower-part p {
+        float: none;
+        text-align: center;
+    }
+    .lower-part .icons {
+        margin: 10px;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav {
+        padding: 20px 10px 10px;
+    }
+    nav .logo-div img {
+        margin-right: 5px;
+    }
+    nav .logo-div .logo {
+        font-size: 2.3rem;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width:340px) {
+    nav .logo-div .logo {
+        font-size: 2rem;
+        letter-spacing: 2px;
+    }
 }
