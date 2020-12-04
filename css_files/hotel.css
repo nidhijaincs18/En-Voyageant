@@ -274,6 +274,9 @@ nav.sticky {
     position: relative;
 }
 
+
+/*Form*/
+
 .available form {
     width: 90%;
     height: auto;
@@ -339,10 +342,12 @@ nav.sticky {
     margin: 5px auto;
 }
 
+
+/*Hotels*/
+
 .available .hotels {
     width: 100%;
     height: auto;
-    border: 1px solid white;
     margin: 20px 0;
 }
 
@@ -362,17 +367,15 @@ nav.sticky {
     height: auto;
     margin: 10px auto;
     position: relative;
-    border: 1px solid red;
 }
 
 .available .hotels .hotel-city .design {
-    width: 23%;
+    width: 22.5%;
     height: auto;
     float: left;
     overflow: hidden;
-    border: 1px solid yellow;
     position: relative;
-    margin: 0 12px;
+    margin: 0 14px;
 }
 
 .available .hotels .hotel-city .design .image {
@@ -440,10 +443,12 @@ nav.sticky {
     color: seagreen;
 }
 
+
+/*Rooms*/
+
 .available .rooms {
     width: 100%;
     height: auto;
-    border: 1px solid white;
     margin: 20px 0;
 }
 
@@ -454,7 +459,6 @@ nav.sticky {
     height: auto;
     padding: 10px 20px 0;
     position: relative;
-    border: 1px solid red;
 }
 
 .available .rooms .room-design {
@@ -462,7 +466,6 @@ nav.sticky {
     height: auto;
     float: left;
     overflow: hidden;
-    border: 1px solid yellow;
     position: relative;
     border-radius: 8px;
     margin: 0px 20px 20px;
@@ -479,6 +482,10 @@ nav.sticky {
 .rooms .room-design img {
     width: 100%;
     height: 100%;
+}
+
+.room-design:hover .image .overlay-hidden {
+    opacity: 1;
 }
 
 .rooms .room-design .image .price {
@@ -763,6 +770,25 @@ hr {
 
 /*Responsive*/
 
+@media screen and (max-width: 1250px) {
+    /*Hotels*/
+    .available .hotels .hotel-city {
+        width: 96%;
+    }
+    .available .hotels .hotel-city .design {
+        width: 21.5%;
+        margin: 0 15px;
+    }
+    .hotels .hotel-city .design .content {
+        height: 130px;
+    }
+    /*Availability Rooms*/
+    .available .rooms .room-design {
+        width: 28%;
+        margin: 0px 25px 20px;
+    }
+}
+
 @media screen and (max-width: 1080px) {
     nav {
         padding: 20px 10px 10px;
@@ -783,6 +809,43 @@ hr {
     nav .nav-bar ul li a {
         padding: 0;
         margin: 0 10px;
+    }
+    /*Form*/
+    .available form {
+        width: 94%;
+        padding: 20px;
+    }
+    .available form .part {
+        width: 20%;
+        margin: 15px;
+    }
+    /*Bookings*/
+    .booking form {
+        float: left;
+        width: 42%;
+        margin: 20px 30px;
+    }
+}
+
+@media screen and (max-width: 985px) {
+    /*Hotels*/
+    .available .hotels .hotel-city {
+        width: 100%;
+    }
+    .available .hotels .hotel-city .design {
+        width: 21%;
+    }
+    /*Availability Rooms*/
+    .available .rooms .room-types {
+        padding: 10px 12px 0;
+        position: relative;
+    }
+    .available .rooms .room-design {
+        width: 45%;
+        margin: 0px 12px 20px;
+    }
+    .available .rooms .room-design .content-room {
+        height: 120px;
     }
 }
 
@@ -831,7 +894,37 @@ hr {
     .nav-bar.active li:last-child {
         display: none;
     }
+    /*Slider*/
+    .slider .banner img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0%;
+        top: 0%;
+        transform: translate(0%, 0%);
+    }
+    /*Form*/
+    .available form .part {
+        width: 25%;
+        margin: 15px;
+    }
+    /*Hotels*/
+    .available h1 {
+        font-size: 2.5rem;
+        margin: 0 20px;
+    }
+    .available .hotels .hotel-city .design {
+        width: 45%;
+        margin: 0 14px 20px;
+    }
+    .hotels .hotel-city .design .content {
+        height: 90px;
+    }
     /*Bookings*/
+    .booking iframe {
+        margin-top: 20px;
+        width: 43%;
+    }
     /*Footer*/
     .upper-part {
         padding: 20px 10px 10px;
@@ -847,10 +940,46 @@ hr {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 610px) {
     .menu-toggle {
         margin: 0px;
         font-size: 30px;
+    }
+    /*Form*/
+    .available form .part {
+        width: 95%;
+        margin: 15px;
+        float: none;
+    }
+    /*Hotels*/
+    .available .hotels .hotel-city .design {
+        width: 95%;
+        margin: 0 14px 20px;
+        float: none;
+    }
+    .hotels .hotel-city .design .content {
+        height: auto;
+    }
+    /*Availability Rooms*/
+    .available .rooms .room-design {
+        width: 95%;
+        float: none;
+    }
+    /*Bookings*/
+    .booking {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 20px;
+    }
+    .booking form {
+        float: left;
+        width: 100%;
+        margin: 20px 0;
+    }
+    .booking iframe {
+        margin-top: 20px;
+        width: 100%;
     }
     /*Footer*/
     .upper-part {
@@ -888,6 +1017,20 @@ hr {
     }
     nav .logo-div .logo {
         font-size: 2.3rem;
+        letter-spacing: 2px;
+    }
+    /*Slider*/
+    .slider .banner .text-box {
+        left: 6%;
+    }
+    .slider .banner .text-box h1 {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (max-width:340px) {
+    nav .logo-div .logo {
+        font-size: 2rem;
         letter-spacing: 2px;
     }
 }
