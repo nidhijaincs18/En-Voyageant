@@ -10,3 +10,19 @@ $(document).ready(function() {
         $('.nav-bar').toggleClass('active')
     })
 })
+
+//Image Slider
+
+$('.carousel').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    dots: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive: {
+        0: {
+            items: 1
+        }
+    }
+});
