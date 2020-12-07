@@ -260,3 +260,12 @@ nav.sticky {
     }
 }
 
+/*Availability*/
+
+.available {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to bottom right, rgb(179, 67, 67), rgb(138, 52, 52), rgb(163, 64, 163));
+    overflow: hidden;
+    position: relative;
+}
