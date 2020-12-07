@@ -7,8 +7,6 @@
 html {
     scroll-behavior: smooth;
 }
-
-
 /*Navigation Bar*/
 
 nav {
@@ -116,7 +114,6 @@ nav.sticky {
     padding: 5px 35px;
     background-color: #000;
 }
-
 
 /*Slider*/
 
@@ -263,7 +260,6 @@ nav.sticky {
     }
 }
 
-
 /*Availability*/
 
 .available {
@@ -273,7 +269,6 @@ nav.sticky {
     overflow: hidden;
     position: relative;
 }
-
 
 /*Form*/
 
@@ -341,7 +336,6 @@ nav.sticky {
     background-color: rgba(255, 255, 255, 0.3);
     margin: 5px auto;
 }
-
 
 /*Hotels*/
 
@@ -442,7 +436,6 @@ nav.sticky {
     font-size: 1.5rem;
     color: seagreen;
 }
-
 
 /*Rooms*/
 
