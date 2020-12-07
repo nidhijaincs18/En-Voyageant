@@ -9,5 +9,9 @@ It is a Travelling Website design made by our group using Front-End Technologies
 # Contibution
 This project has 3 members indulging. Their names are Nidhi Jain, Sakshi Bhardwaj and I, Radhika Bansal. We have distributed the work from designing and implementations. We all contribute to it equally. We divide the work in such a way so that a member has one page to design and implement.
 
-#About Working
+# About Working
+This site has 5 working pages namely HOME, DESTINATIONS, HOTELS, GALLERY and CONTACT. It is fully responsive for every device and every orientation.
+
+
+
 
